@@ -1,6 +1,6 @@
 {
-    "$id": "https://github.com/xbadiche/cumfidio/blob/main/json_schema/gps.schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/gps.schema.json",
     "title": "Longitude and Latitude",
     "description": "A geographical coordinate on a planet (most commonly Earth).",
     "required": [ "latitude", "longitude" ],
