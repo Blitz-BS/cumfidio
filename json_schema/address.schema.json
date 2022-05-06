@@ -1,0 +1,22 @@
+{
+    "$id": "https://github.com/xbadiche/cumfidio/blob/main/json_schema/address.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Address",
+    "description": "Address",
+    "required": [ "zipCode", "city", "countryCode" ],
+    "type": "object",
+    "properties": {
+        "zipCode" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "countryCode" : {
+          "type" : "string"
+        },
+        "gps" : {
+          "$ref": "https://github.com/xbadiche/cumfidio/blob/main/json_schema/gps.schema.json"
+        }
+    }
+}
