@@ -6,7 +6,7 @@
     "required": [ "email" ],
     "type": "object",
     "properties": {
-        "date" : {
+        "email" : {
             "type" : "string",
             "pattern" : "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
         }
