@@ -10,12 +10,37 @@ La [spécification complète](https://json-schema.org/understanding-json-schema/
 Il existe de [nombreux scripts](https://json-schema.org/implementations.html#validators) permettant de vérifier que votre JSON correspond bien au schéma.
 
 Par exemple sur python, vous pouvez utiliser `jsonschema`
+```python
+from jsonschema import validate
+import json
+import requests
 
-  from jsonschema import validate
-  import json
-  import requests
-  
-  url = 'https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/address.schema.json'
-  req = requests.get(url)
-  if req.status_code == requests.codes.ok:
-    req = req.json()
+url = 'https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/address.schema.json'
+req = requests.get(url)
+if req.status_code == requests.codes.ok:
+  req = req.json()  
+# %% validation OK
+instance = {
+    'street' : '265 rue Denis Papin',
+    'zipCode' : '38090',
+    'city' : 'Villefontaine',
+    'countryCode' : 'FR',
+    'gps' : {
+        'latitude' : 45.62127,
+        'longitude' : 5.16182
+    }
+}
+validate(instance = instance, schema = req)
+# %% validation NOK
+instance = {
+    'street' : '265 rue Denis Papin',
+    'zipCode' : '38090',
+    'city' : 'Villefontaine',
+    'countryCode' : 'FR',
+    'gps' : {
+        'latitude' : 45.62127,
+        'longitude' : 'zozo'
+    }
+}
+validate(instance = instance, schema = req)
+```
