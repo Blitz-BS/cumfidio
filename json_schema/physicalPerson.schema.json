@@ -13,7 +13,9 @@
             "type": "string"
         },
         "birthdate" : {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/date.schema.json"
+            "type" : "string",
+            "format" : "date",
+            "description" : "YYYY-MM-DD"
         },
         "civility" : {
             "enum" : ["Mr", "Mrs", "Mr and Mrs", "Ms"]
@@ -33,7 +35,8 @@
         "emails" : {
             "type" : "array",
             "items" : {
-                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/email.schema.json"
+                "type" : "string",
+                "format" : "email"
             }            
         }
     }
