@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/message.schema.json",
     "title": "Message",
     "description": "A message is the element in the messages collection",
-    "required": [ "from", "to", "timestamp", "case", "event" ],
+    "required": [ "from", "to", "timestamp", "case" ],
     "type": "object",
     "properties": {
         "from": {
