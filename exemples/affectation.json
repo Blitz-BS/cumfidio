@@ -19,17 +19,17 @@
                     "reference": "D",
                     "referentiel": "emetteur"
                 },
-                "prenom": "Julie",
-                "nom": "Badiche",
-                "nomMarital": "Schneeberger",
+                "prenom": "Jeanne",
+                "nom": "Dupont",
+                "nomMarital": "Durand",
                 "dateDeNaissance": "1977-06-14",
                 "communeNaissance": "Paris",
                 "civilite": "Mme",
                 "adresses": [
                     {
                         "numero": "17",
-                        "rue": "rue Auguste Comte",
-                        "codePostal": "69002",
+                        "rue": "rue Louis XIV",
+                        "codePostal": "69003",
                         "ville": "Lyon",
                         "codePays": "FR",
                         "gps": {
@@ -81,10 +81,10 @@
                             "reference": "E",
                             "referentiel": "emetteur"
                         },
-                        "prenom": "Simon",
-                        "nom": "Rouxel",
+                        "prenom": "Alain",
+                        "nom": "Martin",
                         "emails": [
-                            "srouxel@blitzbs.com"
+                            "amartin@blitzbs.com"
                         ]
                     }
                 ]
@@ -103,8 +103,8 @@
                         "referentiel": "emetteur"
                     },
                     "emprunteur": {
-                        "prenom": "Xavier",
-                        "nom": "Badiche"
+                        "prenom": "Sébastien",
+                        "nom": "Dujardin"
                     },
                     "preteur": {
                         "raisonSociale": "BNP"
