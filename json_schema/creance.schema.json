@@ -12,8 +12,8 @@
         },
         "debiteur" : {
             "oneOf" : [
-                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json" }
+                { "type" : "string" },
+                { "type" : "number" }
             ]
         },
         "creancier" : {
