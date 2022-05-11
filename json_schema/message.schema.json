@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/message.schema.json",
     "title": "Message",
-    "description": "A message contains a transmitter, a receiver, a timestamp and one of the possible payload",
+    "description": "Un message comprend un émetteur (from), un destinataire (to), une heur (timestamp) et un des contenus possibles",
     "required": [ "from", "to", "timestamp"],
     "minProperties" : 4,
     "maxProperties" : 4,
@@ -21,12 +21,14 @@
         "affectation" : {
             "type" : "object",
             "title": "Affectation d'un dossier",
-            "description": "Affectation d'un dossier au destinataire",
+            "description": "Affectation d'un dossier au destinataire. Le dossier est une créance",
             "minProperties" : 1,
             "maxProperties" : 1,
             "properties" : {
-                "dette" : { "type" : "string" }
+                "creance" : {
+                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json"
+                }
             }
-        } 
+        }
     }
 }

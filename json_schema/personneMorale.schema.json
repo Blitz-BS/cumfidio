@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json",
+    "title": "Personne morale",
+    "description": "Personne morale en droit français",
+    "type": "object",
+    "properties": {
+        "id" : {
+            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/referenceschema.json"
+        },
+        "raisonSociale" : {
+            "type": "string"
+        },
+        "adresses" : {
+            "type" : "array",
+            "items" : {
+                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/adresse.schema.json"
+            }
+        },
+        "telephones" : {
+            "type" : "array",
+            "items" : {
+                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/telephone.schema.json"
+            }            
+        },
+        "emails" : {
+            "type" : "array",
+            "items" : {
+                "type" : "string",
+                "format" : "email"
+            }            
+        },
+        "contacts" : {
+            "type" : "array",
+            "items" : {
+                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json"
+            }              
+        }
+    }
+}

@@ -2,15 +2,15 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json",
     "title": "Reference",
-    "description": "An object reference depends on the repository. La référence d'un objet dépend de son référentiel : émetteur, destinataire, donneur d'ordre ou prestataire",
-    "required": [ "reference", "repository" ],
+    "description": "Une référence dépend de son référentiel : émetteur, destinataire, donneur d'ordre ou prestataire",
+    "required": [ "reference", "referentiel" ],
     "type": "object",
     "properties": {
         "reference": {
           "type": "string"
         },
-        "repository": {
-          "enum" : [ "transmitter" , "receiver", "contractor", "supplier"]
+        "referentiel": {
+          "enum" : [ "emetteur" , "destinataire", "donneurDordre", "prestataire"]
         }
     }
 }

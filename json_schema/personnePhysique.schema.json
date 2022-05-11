@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json",
+    "title": "Personne physique",
+    "description": "Personne physique",
+    "type": "object",
+    "properties": {
+        "id" : {
+            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/referenceschema.json"
+        },
+        "prenom" : {
+            "type": "string"
+        },
+        "nom" : {
+            "type": "string"
+        },
+        "nomMarital" : {
+            "type": "string"
+        },
+        "dateDeNaissance" : {
+            "type" : "string",
+            "format" : "date",
+            "description" : "YYYY-MM-DD"
+        },
+        "civilite" : {
+            "enum" : ["Mr", "Mme", "Mr et Mme", "Mlle"]
+        },
+        "adresses" : {
+            "type" : "array",
+            "items" : {
+                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/adresse.schema.json"
+            }
+        },
+        "telephones" : {
+            "type" : "array",
+            "items" : {
+                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/telephone.schema.json"
+            }            
+        },
+        "emails" : {
+            "type" : "array",
+            "items" : {
+                "type" : "string",
+                "format" : "email"
+            }            
+        }
+    }
+}

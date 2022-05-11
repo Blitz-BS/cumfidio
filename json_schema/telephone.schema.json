@@ -1,0 +1,18 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/telephone.schema.json",
+    "title": "Téléphone",
+    "description": "Téléphone mobile ou fixe.",
+    "required": [ "numero" ],
+    "type": "object",
+    "properties": {
+        "numero": {
+          "type": "string",
+          "pattern" : "^\\+[0-9]{9,17}$",
+          "description": "Format international. exemple : +33614194315"
+        },
+        "type": {
+          "enum" : ["fixe", "mobile"]
+        }
+    }
+}
