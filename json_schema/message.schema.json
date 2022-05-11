@@ -48,6 +48,7 @@
             "title" : "Paiement",
             "description" : "Paiement d'un montant sur une créance", 
             "required": [ "idCreance", "paiement", "idResponsable"],
+            "additionalProperties": false,
             "properties" : {
                 "idCreance" : {
                     "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
@@ -72,6 +73,18 @@
                     "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json"
                 }
             }
+        },
+        "passageEnImpayeDefinitif" : {
+            "type" : "object",
+            "title": "Passage en impayé définitif",
+            "description": "Passage de la créance en impayé définitif",
+            "required": [ "idCreance" ],
+            "additionalProperties": false,
+            "properties" : {
+                "idCreance" : {
+                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+                }
+            }           
         }
     }
 }

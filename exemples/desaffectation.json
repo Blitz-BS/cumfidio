@@ -1,0 +1,17 @@
+{
+    "from": {
+        "reference": "A",
+        "referentiel": "emetteur"
+    },
+    "to": {
+        "reference": "B",
+        "referentiel": "emetteur"
+    },
+    "timestamp": "2018-11-13T20:20:39+00:00",
+    "desaffectation": {
+        "idCreance": {
+            "reference": "Z",
+            "referentiel": "emetteur"
+        }
+    }
+}

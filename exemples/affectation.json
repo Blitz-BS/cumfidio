@@ -1,0 +1,132 @@
+{
+    "from": {
+        "reference": "A",
+        "referentiel": "emetteur"
+    },
+    "to": {
+        "reference": "B",
+        "referentiel": "emetteur"
+    },
+    "timestamp": "2018-11-13T20:20:39+00:00",
+    "affectation": {
+        "creance": {
+            "id": {
+                "reference": "C",
+                "referentiel": "emetteur"
+            },
+            "debiteur": {
+                "id": {
+                    "reference": "D",
+                    "referentiel": "emetteur"
+                },
+                "prenom": "Julie",
+                "nom": "Badiche",
+                "nomMarital": "Schneeberger",
+                "dateDeNaissance": "1977-06-14",
+                "communeNaissance": "Paris",
+                "civilite": "Mme",
+                "adresses": [
+                    {
+                        "numero": "17",
+                        "rue": "rue Auguste Comte",
+                        "codePostal": "69002",
+                        "ville": "Lyon",
+                        "codePays": "FR",
+                        "gps": {
+                            "latitude": 30.2,
+                            "longitude": 40.5
+                        }
+                    }
+                ],
+                "telephones": [
+                    {
+                        "type": "fixe",
+                        "numero": "+33465987456"
+                    },
+                    {
+                        "type": "mobile",
+                        "numero": "+33689751263"
+                    }
+                ],
+                "emails": [
+                    "zz@gmail.com",
+                    "uu@yahoo.fr"
+                ]
+            },
+            "creancier": {
+                "id": {
+                    "reference": "A",
+                    "referentiel": "emetteur"
+                },
+                "raisonSociale": "Blitz Business Service",
+                "marques": [
+                    "Blitz"
+                ],
+                "adresses": [
+                    {
+                        "numero": "265",
+                        "rue": "rue Denis Papin",
+                        "codePostal": "38090",
+                        "ville": "Villefontaine",
+                        "codePays": "FR",
+                        "gps": {
+                            "latitude": 32.7,
+                            "longitude": 45.5
+                        }
+                    }
+                ],
+                "contacts": [
+                    {
+                        "id": {
+                            "reference": "E",
+                            "referentiel": "emetteur"
+                        },
+                        "prenom": "Simon",
+                        "nom": "Rouxel",
+                        "emails": [
+                            "srouxel@blitzbs.com"
+                        ]
+                    }
+                ]
+            },
+            "montantDu": {
+                "montant": {
+                    "valeur": 1250.25,
+                    "monnaie": "EUR"
+                },
+                "timestamp": "2018-11-13T20:20:39+00:00"
+            },
+            "origine": {
+                "credit": {
+                    "id": {
+                        "reference": "F",
+                        "referentiel": "emetteur"
+                    },
+                    "emprunteur": {
+                        "prenom": "Xavier",
+                        "nom": "Badiche"
+                    },
+                    "preteur": {
+                        "raisonSociale": "BNP"
+                    },
+                    "montantEmprunte": {
+                        "valeur": 1250.25,
+                        "monnaie": "EUR"
+                    },
+                    "dateOuverture": "2018-11-13T20:20:39+00:00",
+                    "taux": 0.015,
+                    "enseigne": "Cuisine and co",
+                    "biensFinances": [
+                        {
+                            "nom": "cuisine",
+                            "prix": {
+                                "valeur": 3258.25,
+                                "monnaie": "EUR"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
