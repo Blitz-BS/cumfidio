@@ -1,0 +1,56 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/credit.schema.json",
+    "title": "Crédit",
+    "description": "Une crédit comprend un emprunteur et un prêteur, un montant financé, une date d'ouverture, une durée, un taux, des biens financé.",
+    "type": "object",
+    "properties": {
+        "id" : {
+            "description" : "identifiant de la créance",
+            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+        },
+        "emprunteur" : {
+            "oneOf" : [
+                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json" }
+            ]
+        },
+        "preteur" : {
+            "oneOf" : [
+                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json" }
+            ]
+        },
+        "montantEmprunte" : {
+            "description" : "montant emprunté",
+            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montant.schema.json"
+        },
+        "dateOuverture" : {
+            "type" : "string",
+            "format" : "date"
+        },
+        "taux" : {
+            "type" : "number",
+            "minimum" : 0,
+            "maximum" : 1
+        },
+        "enseigne" : {
+            "description" : "enseigne partenaire",
+            "type" : "string"
+        },
+        "biensFinances" : {
+            "type" : "array",
+            "items" : {
+                "type" : "object",
+                "properties" : {
+                    "nom" : {
+                        "type" : "string"
+                    },
+                    "prix" : {
+                        "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montant.schema.json"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,7 +10,7 @@
           "type": "string"
         },
         "referentiel": {
-          "enum" : [ "emetteur" , "destinataire", "donneurDordre", "prestataire"]
+          "enum" : [ "emetteur" , "destinataire", "donneurDordre", "prestataire" ]
         }
     }
 }

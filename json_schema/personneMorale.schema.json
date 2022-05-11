@@ -11,6 +11,12 @@
         "raisonSociale" : {
             "type": "string"
         },
+        "marques" : {
+            "type" : "arrays",
+            "items" : {
+                "type" : "string"
+            }
+        },
         "adresses" : {
             "type" : "array",
             "items" : {

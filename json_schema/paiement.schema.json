@@ -2,8 +2,8 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/paiement.schema.json",
     "title": "Paiement",
-    "description": "Un paiement comprend un moyen de paiement et un montant",
-    "required": [ "moyen", "montant" ],
+    "description": "Un paiement comprend un moyen de paiement, un montant et une date",
+    "required": [ "moyen", "montant", "timestamp" ],
     "type": "object",
     "properties": {
         "moyen" : {
@@ -12,6 +12,10 @@
         },
         "montant" : {
           "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montant.schema.json"
+        },
+        "timestamp" : {
+          "type" : "string",
+          "format" : "date-time"
         }
     }
 }

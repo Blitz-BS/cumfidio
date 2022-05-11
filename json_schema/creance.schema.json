@@ -6,7 +6,7 @@
     "type": "object",
     "properties": {
         "id" : {
-            "description" : "identifiant de la créance"
+            "description" : "identifiant de la créance",
             "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
         },
         "debiteur" : {

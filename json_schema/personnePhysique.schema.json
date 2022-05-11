@@ -22,6 +22,9 @@
             "format" : "date",
             "description" : "YYYY-MM-DD"
         },
+        "communeNaissance" : {
+            "type" : "string"
+        },
         "civilite" : {
             "enum" : ["Mr", "Mme", "Mr et Mme", "Mlle"]
         },
