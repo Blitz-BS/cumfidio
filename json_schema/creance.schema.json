@@ -36,6 +36,9 @@
                     "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/credit.schema.json"
                 }
             }
+        },
+        "statut" : {
+            "enum" : [ "due", "impayeDefinitif"]
         }
     }
 }
