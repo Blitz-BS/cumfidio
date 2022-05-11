@@ -7,7 +7,7 @@
     "additionalProperties": false,
     "properties": {
         "id" : {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/referenceschema.json"
+            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
         },
         "prenom" : {
             "type": "string"
