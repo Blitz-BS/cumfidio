@@ -21,10 +21,10 @@ if req.status_code == requests.codes.ok:
   req = req.json()  
 # %% validation OK
 instance = {
-    'street' : '265 rue Denis Papin',
-    'zipCode' : '38090',
-    'city' : 'Villefontaine',
-    'countryCode' : 'FR',
+    'rue' : '265 rue Denis Papin',
+    'codePostal' : '38090',
+    'ville' : 'Villefontaine',
+    'codePays' : 'FR',
     'gps' : {
         'latitude' : 45.62127,
         'longitude' : 5.16182
@@ -33,10 +33,10 @@ instance = {
 validate(instance = instance, schema = req)
 # %% validation NOK
 instance = {
-    'street' : '265 rue Denis Papin',
-    'zipCode' : '38090',
-    'city' : 'Villefontaine',
-    'countryCode' : 'FR',
+    'rue' : '265 rue Denis Papin',
+    'codePostal' : '38090',
+    'ville' : 'Villefontaine',
+    'codePays' : 'FR',
     'gps' : {
         'latitude' : 45.62127,
         'longitude' : 'zozo'
