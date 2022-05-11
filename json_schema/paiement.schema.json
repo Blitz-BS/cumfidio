@@ -5,6 +5,7 @@
     "description": "Un paiement comprend un moyen de paiement, un montant et une date",
     "required": [ "moyen", "montant", "timestamp" ],
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "moyen" : {
           "enum" : ["VRP", "VRB", "TRG", "TRF", "RPT", "RPP", "RPJ", "RPF", "RIT", "OAO", "MCH", "MCA", "MAL", "IAD", "EXT", "ESP", "DEC", "CHO", "AXA", "ANN", "ANI", "ANF", "AJS", "AFI", "ADP", "ACO", "ACF", "PCB", "RGU", "DPA", "DPI", "RPA", "TRM", "TRI", "PVT", "PVF", "DRC", "DRI", "CHQ"],

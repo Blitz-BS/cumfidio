@@ -5,6 +5,7 @@
     "description": "Longitude et Latitude.",
     "required": [ "latitude", "longitude" ],
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "latitude": {
           "type": "number",

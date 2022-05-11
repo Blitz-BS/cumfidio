@@ -7,6 +7,7 @@
     "minProperties" : 4,
     "maxProperties" : 4,
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "from": {
             "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
