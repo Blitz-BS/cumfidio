@@ -2,8 +2,10 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/message.schema.json",
     "title": "Message",
-    "description": "A message is the element in the messages collection",
-    "required": [ "from", "to", "timestamp", "case" ],
+    "description": "A message contains a transmitter, a receiver, a timestamp and one of the possible payload",
+    "required": [ "from", "to", "timestamp"],
+    "minProperties" : 4,
+    "maxProperties" : 4,
     "type": "object",
     "properties": {
         "from": {
@@ -16,12 +18,15 @@
             "type" : "string",
             "format" : "date-time"
         },
-        "case" : {
-            "type" : "string"
-        },
-        "oneOf" : [
-            {"event1" : {"type": "string"} },
-            {"event2" : {"type": "string"} }
-        ]
+        "affectation" : {
+            "type" : "object",
+            "title": "Affectation d'un dossier",
+            "description": "Affectation d'un dossier au destinataire",
+            "minProperties" : 1,
+            "maxProperties" : 1,
+            "properties" : {
+                "dette" : { "type" : "string" }
+            }
+        } 
     }
 }
