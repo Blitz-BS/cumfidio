@@ -13,7 +13,7 @@
             "type": "string"
         },
         "marques" : {
-            "type" : "arrays",
+            "type" : "array",
             "items" : {
                 "type" : "string"
             }
