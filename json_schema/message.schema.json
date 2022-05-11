@@ -2,10 +2,10 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/message.schema.json",
     "title": "Message",
-    "description": "Un message comprend un émetteur (from), un destinataire (to), une heur (timestamp) et un des contenus possibles",
-    "required": [ "from", "to", "timestamp"],
-    "minProperties" : 4,
-    "maxProperties" : 4,
+    "description": "Un message comprend un émetteur (from), un destinataire (to), une heure (timestamp), un dossier et un des contenus possibles",
+    "required": [ "from", "to", "timestamp", "idDossier"],
+    "minProperties" : 5,
+    "maxProperties" : 5,
     "type": "object",
     "additionalProperties": false,
     "properties": {
@@ -18,6 +18,9 @@
         "timestamp" : {
             "type" : "string",
             "format" : "date-time"
+        },
+        "idDossier" : {
+            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
         },
         "affectation" : {
             "type" : "object",

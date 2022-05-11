@@ -8,6 +8,10 @@
         "referentiel": "emetteur"
     },
     "timestamp": "2018-11-13T20:20:39+00:00",
+    "idDossier": {
+        "reference": "Z",
+        "referentiel": "emetteur"
+    },
     "desaffectation": {
         "idCreance": {
             "reference": "Z",
