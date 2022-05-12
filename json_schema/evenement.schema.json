@@ -14,8 +14,18 @@
     "anyOf" : [
         {
             "properties" : {
+                "type" : {
+                    "enum" : ["affectation"]
+                },
+                "creance" : {
+                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json"
+                }
+            }
+        },
+        {
+            "properties" : {
                 "type" : { 
-                    "enum" : ["desaffectation", "passageEnImpayeDefinitif"]
+                    "enum" : ["desaffectation"]
                 },
                 "idDossier" : { 
                     "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
@@ -41,19 +51,16 @@
         },
         {
             "properties" : {
-                "type" : {
-                    "enum" : ["affectation"]
+                "type" : { 
+                    "enum" : ["modificationStatut"]
+                },
+                "idDossier" : { 
+                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+                },
+                "transition" : {
+                    "enum" : ["passageEnIrrecouvrable"]
                 }
-            },
-            "anyOf" : [
-                {
-                    "properties" : {
-                        "creance" : {
-                            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json"
-                        }
-                    }
-                }
-            ]
+            }
         }
     ]
 }
