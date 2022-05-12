@@ -1,0 +1,31 @@
+{
+    "from": {
+        "reference": "A",
+        "referentiel": "emetteur"
+    },
+    "to": {
+        "reference": "B",
+        "referentiel": "emetteur"
+    },
+    "timestamp": "2018-11-13T20:20:39+00:00",
+    "evenement": {
+        "timestamp" : "2018-11-13T20:20:39+00:00",
+        "type" : "paiement",
+        "idDossier" : {
+            "reference": "C",
+            "referentiel": "emetteur"
+        },
+        "idResponsable" : {
+            "reference": "D",
+            "referentiel": "emetteur"
+        },
+        "paiement" : {
+            "moyen" : "CHQ",
+            "montant" : {
+                "valeur" : 123.20,
+                "monnaie" : "EUR"
+            },
+            "timestamp" : "2018-11-13T20:20:39+00:00"
+        }
+    }
+}

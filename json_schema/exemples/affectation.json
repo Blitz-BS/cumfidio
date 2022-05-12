@@ -19,6 +19,7 @@
             },
             "statut" : "due",
             "debiteur": {
+                "type" : "personnePhysique",
                 "id": {
                     "reference": "D",
                     "referentiel": "emetteur"
@@ -58,6 +59,7 @@
                 ]
             },
             "creancier": {
+                "type" : "personneMorale",
                 "id": {
                     "reference": "A",
                     "referentiel": "emetteur"
@@ -107,10 +109,12 @@
                         "referentiel": "emetteur"
                     },
                     "emprunteur": {
+                        "type" : "personnePhysique",
                         "prenom": "Sébastien",
                         "nom": "Dujardin"
                     },
                     "preteur": {
+                        "type" : "personneMorale",
                         "raisonSociale": "BNP"
                     },
                     "montantEmprunte": {

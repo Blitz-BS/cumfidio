@@ -1,0 +1,20 @@
+{
+    "from": {
+        "reference": "A",
+        "referentiel": "emetteur"
+    },
+    "to": {
+        "reference": "B",
+        "referentiel": "emetteur"
+    },
+    "timestamp": "2018-11-13T20:20:39+00:00",
+    "evenement": {
+        "timestamp" : "2018-11-13T20:20:39+00:00",
+        "type" : "modificationStatut",
+        "idDossier" : {
+            "reference": "C",
+            "referentiel": "emetteur"
+        },
+        "transition" : "passageEnIrrecouvrable"
+    }
+}

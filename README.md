@@ -30,7 +30,7 @@ Pour l'instant 4 types de message sont disponibles
 * modification de statut
 
 ### évènement de type affectation
-Un évènement de type affectation permet d'affecter un dossier à un prestataire. Pour l'instant le seul type de dossier qui peut être affecté est une [créance](https://github.com/xbadiche/cumfidio/blob/main/json_schema/evenement.schema.json).
+Un évènement de type affectation permet d'affecter un [dossier](https://github.com/xbadiche/cumfidio/blob/main/json_schema/evenement.schema.json) à un prestataire. 
 
 _exemple de [message de type affectation](https://github.com/xbadiche/cumfidio/blob/main/json_schema/exemples/affectation.json)_
 
@@ -55,6 +55,23 @@ Une modification comprend deux propriétés
 Pour l'instant la seule transition disponible est `passageEnIrrecouvrable`. 
 
 > le formalisme suivi est celui des [automates finis](https://fr.wikipedia.org/wiki/Automate_fini). L'objet peut être dans un nombre fini de statuts (états). L'application d'une transition modifie le statut de l'objet. On pourra décrire des systèmes complexes de statuts (états) grâce à des [diagrammes états-transitions](https://fr.wikipedia.org/wiki/Diagramme_%C3%A9tats-transitions)
+
+## schéma [dossier](https://github.com/xbadiche/cumfidio/blob/main/json_schema/dossier.schema.json)
+Un dossier a comme seule propriété obligatoire son `type`. Il dispose en général d'une propriété `statut`
+
+Pour l'instant seul le type `creance` est disponible.
+
+### dossier de type [créance](https://github.com/xbadiche/cumfidio/blob/main/json_schema/dossier.schema.json)
+Une créance est un objet qui peut être un dossier. 
+
+Une créance comprend les propriétés suivantes
+* `type` : cette propriété est forcément à `creance`. Elle est utilisée quand la créance est utilisée comme dossier
+* `id` : identifiant de la créance
+* `statut` : statut de la créance (due, impayé définitif...)
+* `debiteur`: personne physique ou morale
+* `creancier` : personne physique ou morale
+* `montantDu` : montant du par le débiteur au créancier à une date donnée
+* `origine` : origine de la créance. La seule origine possible est un [crédit](https://github.com/xbadiche/cumfidio/blob/main/json_schema/credit.schema.json)
 
 # valider votre json
 
