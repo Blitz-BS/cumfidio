@@ -8,6 +8,9 @@
         "id" : {
             "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
         },
+        "type" : {
+            "enum" : ["personneMorale"]
+        },
         "raisonSociale" : {
             "type": "string"
         },

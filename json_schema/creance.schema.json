@@ -2,20 +2,28 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json",
     "title": "Créance",
-    "description": "Une créance comprend un débiteur, un créancier, un montant restant dû à une date et une origine.",
+    "description": "Un créance est un montant dû par un débiteur à un créancier. Il s'agit d'un type de dossier",
     "type": "object",
     "properties": {
+        "type" : { 
+            "enum" : ["creance"]
+        },
         "id" : {
             "description" : "identifiant de la créance",
             "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
         },
+        "statut" : {
+            "enum" : [ "due", "impayeDefinitif"]
+        },
         "debiteur" : {
+            "required": ["type"],
             "oneOf": [
                 { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json" },
                 { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json" }
             ]
         },
         "creancier" : {
+            "required": ["type"],
             "oneOf" : [
                 { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json" },
                 { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json" }
@@ -26,18 +34,17 @@
         },
         "origine" : {
             "type" : "object",
-            "minProperties" : 1,
-            "maxProperties" : 1,
             "title" : "origine de la créance",
             "description" : "plusieurs origine sont possibles : crédit...",
-            "properties" : {
-                "credit" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/credit.schema.json"
+            "oneOf" : [
+                {
+                    "properties" : {
+                        "credit" : {
+                            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/credit.schema.json"
+                        }
+                    }
                 }
-            }
-        },
-        "statut" : {
-            "enum" : [ "due", "impayeDefinitif"]
+            ]
         }
     }
 }

@@ -11,14 +11,17 @@
             "format" : "date-time"
         }
     },
-    "anyOf" : [
+    "oneOf" : [
         {
             "properties" : {
                 "type" : {
                     "enum" : ["affectation"]
                 },
-                "creance" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json"
+                "dossier" : {
+                    "required": [ "type" ],
+                    "oneOf" : [
+                        { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json" }
+                    ]
                 }
             }
         },
