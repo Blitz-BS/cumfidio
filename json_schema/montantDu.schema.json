@@ -5,7 +5,6 @@
     "description": "Montant dû à une date donnée",
     "required": [ "montant", "timestamp" ],
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "montant": {
             "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montant.schema.json"

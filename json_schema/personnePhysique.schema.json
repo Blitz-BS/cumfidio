@@ -4,7 +4,6 @@
     "title": "Personne physique",
     "description": "Personne physique",
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "id" : {
             "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"

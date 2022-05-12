@@ -7,12 +7,10 @@
         "reference": "B",
         "referentiel": "emetteur"
     },
-    "idDossier" : {
-        "reference": "C",
-        "referentiel": "emetteur"
-    },
     "timestamp": "2018-11-13T20:20:39+00:00",
-    "affectation": {
+    "evenement" : {
+        "timestamp": "2018-11-13T20:20:39+00:00",
+        "type" : "affectation",
         "creance": {
             "id": {
                 "reference": "C",

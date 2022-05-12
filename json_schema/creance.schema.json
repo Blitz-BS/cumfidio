@@ -4,7 +4,6 @@
     "title": "Créance",
     "description": "Une créance comprend un débiteur, un créancier, un montant restant dû à une date et une origine.",
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "id" : {
             "description" : "identifiant de la créance",

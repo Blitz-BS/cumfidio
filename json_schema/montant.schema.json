@@ -5,7 +5,6 @@
     "description": "Montant monétaire",
     "required": [ "valeur", "monnaie" ],
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "valeur": {
           "type": "number",

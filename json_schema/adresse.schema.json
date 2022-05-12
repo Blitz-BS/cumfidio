@@ -5,7 +5,6 @@
     "description": "Adresse",
     "required": [ "codePostal", "ville", "codePays" ],
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "numero" : {
           "type" : "string",

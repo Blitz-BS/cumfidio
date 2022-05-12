@@ -2,12 +2,9 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/message.schema.json",
     "title": "Message",
-    "description": "Un message comprend un émetteur (from), un destinataire (to), une heure (timestamp), un dossier et un des contenus possibles",
-    "required": [ "from", "to", "timestamp", "idDossier"],
-    "minProperties" : 5,
-    "maxProperties" : 5,
+    "description": "Un message comprend un émetteur (from), un destinataire (to), une heure (timestamp), un évènement",
+    "required": [ "from", "to", "timestamp", "evenement"],
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "from": {
             "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
@@ -19,75 +16,8 @@
             "type" : "string",
             "format" : "date-time"
         },
-        "idDossier" : {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
-        },
-        "affectation" : {
-            "type" : "object",
-            "title": "Affectation d'un dossier",
-            "description": "Affectation d'un dossier au destinataire. Le dossier est une créance (pour l'instant)",
-            "minProperties" : 1,
-            "maxProperties" : 1,
-            "properties" : {
-                "creance" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json"
-                }
-            }
-        },
-        "desaffectation" : {
-            "type" : "object",
-            "title" : "Désaffectation d'un dossier",
-            "description" : "le dossier désaffecté peut être une créance",
-            "minProperties" : 1,
-            "maxProperties" : 1,
-            "properties" : {
-                "idCreance" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
-                }
-            }
-        },
-        "paiementCreance" : {
-            "type" : "object",
-            "title" : "Paiement",
-            "description" : "Paiement d'un montant sur une créance", 
-            "required": [ "idCreance", "paiement", "idResponsable"],
-            "additionalProperties": false,
-            "properties" : {
-                "idCreance" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
-                },
-                "paiement" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/paiement.schema.json"
-                },
-                "idResponsable" : {
-                    "description" : "Organisation qui a reçue le paiement. Ce peut être le prestataire ou le donneur d'ordre",
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
-                }
-            }          
-        },
-        "miseAjour" : {
-            "type" : "object",
-            "title": "Mise à jour d'un dossier",
-            "description": "Mise à jour d'un dossier par exemple d'une créance",
-            "minProperties" : 1,
-            "maxProperties" : 1,
-            "properties" : {
-                "creance" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json"
-                }
-            }
-        },
-        "passageEnImpayeDefinitif" : {
-            "type" : "object",
-            "title": "Passage en impayé définitif",
-            "description": "Passage de la créance en impayé définitif",
-            "required": [ "idCreance" ],
-            "additionalProperties": false,
-            "properties" : {
-                "idCreance" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
-                }
-            }           
+        "evenement" : {
+            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/evenement.schema.json"
         }
     }
 }

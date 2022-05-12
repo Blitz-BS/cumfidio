@@ -5,7 +5,6 @@
     "description": "Une référence dépend de son référentiel : émetteur, destinataire, donneur d'ordre ou prestataire",
     "required": [ "reference", "referentiel" ],
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "reference": {
           "type": "string"

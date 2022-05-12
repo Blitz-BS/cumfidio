@@ -4,7 +4,6 @@
     "title": "Crédit",
     "description": "Une crédit comprend un emprunteur et un prêteur, un montant financé, une date d'ouverture, une durée, un taux, des biens financé.",
     "type": "object",
-    "additionalProperties": false,
     "properties": {
         "id" : {
             "description" : "identifiant de la créance",
