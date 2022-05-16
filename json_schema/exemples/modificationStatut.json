@@ -15,6 +15,7 @@
             "reference": "C",
             "referentiel": "emetteur"
         },
+        "objet" : "dossier",
         "transition" : "passageEnIrrecouvrable"
     }
 }

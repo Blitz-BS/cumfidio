@@ -1,12 +1,12 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json",
     "title": "Personne physique",
     "description": "Personne physique",
     "type": "object",
     "properties": {
         "id" : {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "type" : {
             "enum" : ["personnePhysique"]
@@ -34,13 +34,13 @@
         "adresses" : {
             "type" : "array",
             "items" : {
-                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/adresse.schema.json"
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/adresse.schema.json"
             }
         },
         "telephones" : {
             "type" : "array",
             "items" : {
-                "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/telephone.schema.json"
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/telephone.schema.json"
             }            
         },
         "emails" : {

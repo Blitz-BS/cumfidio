@@ -1,16 +1,13 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/creance.schema.json",
     "title": "Créance",
     "description": "Un créance est un montant dû par un débiteur à un créancier. Il s'agit d'un type de dossier",
     "type": "object",
     "properties": {
-        "type" : { 
-            "enum" : ["creance"]
-        },
         "id" : {
             "description" : "identifiant de la créance",
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "statut" : {
             "enum" : [ "due", "impayeDefinitif"]
@@ -18,19 +15,26 @@
         "debiteur" : {
             "required": ["type"],
             "oneOf": [
-                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json" }
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
             ]
         },
+        "debiteurSecondaire" : {
+            "required": ["type"],
+            "oneOf": [
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+            ]
+        },        
         "creancier" : {
             "required": ["type"],
             "oneOf" : [
-                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/personneMorale.schema.json" }
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
             ]
         },
         "montantDu" : {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montantDu.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montantDu.schema.json"
         },
         "origine" : {
             "type" : "object",
@@ -40,7 +44,7 @@
                 {
                     "properties" : {
                         "credit" : {
-                            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/credit.schema.json"
+                            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/credit.schema.json"
                         }
                     }
                 }

@@ -1,17 +1,16 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/paiement.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/paiement.schema.json",
     "title": "Paiement",
     "description": "Un paiement comprend un moyen de paiement, un montant et une date",
     "required": [ "moyen", "montant", "timestamp" ],
     "type": "object",
     "properties": {
         "moyen" : {
-          "enum" : ["VRP", "VRB", "TRG", "TRF", "RPT", "RPP", "RPJ", "RPF", "RIT", "OAO", "MCH", "MCA", "MAL", "IAD", "EXT", "ESP", "DEC", "CHO", "AXA", "ANN", "ANI", "ANF", "AJS", "AFI", "ADP", "ACO", "ACF", "PCB", "RGU", "DPA", "DPI", "RPA", "TRM", "TRI", "PVT", "PVF", "DRC", "DRI", "CHQ"],
-          "description": "On trouvera la description sur https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/description/moyensDePaiement.csv"
+          "enum" : ["carteBancaire", "cheque", "virement", "prelevement", "titreInterbancaireDePaiement", "traite", "billetAordre"]
         },
         "montant" : {
-          "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montant.schema.json"
+          "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montant.schema.json"
         },
         "timestamp" : {
           "type" : "string",

@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/gps.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/gps.schema.json",
     "title": "Coordonnées GPS",
     "description": "Longitude et Latitude.",
     "required": [ "latitude", "longitude" ],

@@ -1,10 +1,17 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/dossier.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/dossier.schema.json",
     "title": "Dossier",
-    "description": "Un dossier dispose en général d'un statut. Il dossier peut avoir plusieurs types. Seul le type créance est disponible",
-    "required": [ "type" ],
-    "oneOf" : [
-        { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json" }
-    ]
+    "description": "Un dossier dispose d'un statut. Il dispose de plusieurs pièces",
+    "properties" : {
+        "statut" : {
+            "enum" : ["ouvert","cloture"]
+        },
+        "creance" : { 
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/creance.schema.json"
+        },
+        "titre" : { 
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/titre.schema.json"
+        }
+    }
 }

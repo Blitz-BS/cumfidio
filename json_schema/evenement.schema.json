@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/message.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/message.schema.json",
     "title": "Evènement",
     "description": "Un évènement peut être de différents types qui détermine la structure de l'objet",
     "required": [ "type", "timestamp" ],
@@ -20,7 +20,7 @@
                 "dossier" : {
                     "required": [ "type" ],
                     "oneOf" : [
-                        { "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/creance.schema.json" }
+                        { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/creance.schema.json" }
                     ]
                 }
             }
@@ -31,7 +31,7 @@
                     "enum" : ["desaffectation"]
                 },
                 "idDossier" : { 
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
                 }
             }
         },
@@ -41,24 +41,29 @@
                     "enum" : ["paiement"]
                 },
                 "idDossier" : { 
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
                 },
                 "paiement" : {
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/paiement.schema.json"
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/paiement.schema.json"
                 },
                 "idResponsable" : {
                     "description" : "Organisation qui a reçue le paiement. Ce peut être le prestataire ou le donneur d'ordre",
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
                 }
             }
         },
         {
             "properties" : {
                 "type" : { 
+                    "title" : "Modification d'un statut",
+                    "description" : "La modification d'un statut précise l'objet dont le statut est modifié et la transition",
                     "enum" : ["modificationStatut"]
                 },
                 "idDossier" : { 
-                    "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+                },
+                "objet" : {
+                    "enum" : ["dossier","creance"]
                 },
                 "transition" : {
                     "enum" : ["passageEnIrrecouvrable"]

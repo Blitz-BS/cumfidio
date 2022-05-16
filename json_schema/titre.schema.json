@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/titre.schema.json",
+    "title": "Titre",
+    "description": "Titre exécutoire",
+    "type": "object",
+    "properties": {
+        "id" : {
+            "description" : "identifiant du titre",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+        },
+        "statut" : {
+            "enum" : [ "delivre", "prescrit"]
+        },
+        "idCreance" : {
+            "description" : "identifiant de la créance",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+        },
+        "date" : {
+            "type" : "string",
+            "format" : "date"
+        },
+        "dateExecutoire" : {
+            "type" : "string",
+            "format" : "date"
+        },
+        "libelle" : {
+            "type" : "string"
+        }
+    }
+}

@@ -1,23 +1,23 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/message.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/message.schema.json",
     "title": "Message",
     "description": "Un message comprend un émetteur (from), un destinataire (to), une heure (timestamp), un évènement",
     "required": [ "from", "to", "timestamp", "evenement"],
     "type": "object",
     "properties": {
         "from": {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "to": {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/reference.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "timestamp" : {
             "type" : "string",
             "format" : "date-time"
         },
         "evenement" : {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/evenement.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/evenement.schema.json"
         }
     }
 }

@@ -1,13 +1,13 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montantDu.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montantDu.schema.json",
     "title": "Montant dû",
     "description": "Montant dû à une date donnée",
     "required": [ "montant", "timestamp" ],
     "type": "object",
     "properties": {
         "montant": {
-            "$ref": "https://raw.githubusercontent.com/xbadiche/cumfidio/main/json_schema/montant.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montant.schema.json"
         },
         "timestamp" : {
             "type" : "string",
