@@ -2,55 +2,85 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/credit.schema.json",
     "title": "Crédit",
-    "description": "Une crédit comprend un emprunteur et un prêteur, un montant financé, une date d'ouverture, une durée, un taux, des biens financé.",
+    "description": "Seul les crédits à la consommation affecté sont implémentés",
     "type": "object",
     "properties": {
         "id" : {
-            "description" : "identifiant de la créance",
+            "title" : "Identifiant",
+            "description" : "Identifiant de la créance",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
-        "emprunteur" : {
-            "oneOf" : [
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
-            ]
+        "emprunteurs" : {
+            "title" : "Emprunteurs",
+            "description" : "Il peut y avoir plusieurs co-emprunteurs personnes physiques ou morales",
+            "type" : "array",
+            "items" : {
+                "oneOf" : [
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+                ]
+            }
         },
         "preteur" : {
+            "title" : "Prêteur",
+            "description" : "Prêteur du crédit",            
             "oneOf" : [
                 { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
                 { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
             ]
         },
         "montantEmprunte" : {
-            "description" : "montant emprunté",
+            "title" : "Montant emprunté",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montant.schema.json"
         },
         "dateOuverture" : {
+            "title" : "Date de l'ouverture du crédit",
             "type" : "string",
             "format" : "date"
         },
         "taux" : {
+            "title" : "Taux du crédit",
+            "description" : "Le taux est au format décimal. Exemple : 0.012 pour 1,2%", 
             "type" : "number",
             "minimum" : 0,
             "maximum" : 1
-        },
-        "enseigne" : {
-            "description" : "enseigne partenaire",
-            "type" : "string"
-        },
-        "biensFinances" : {
-            "type" : "array",
-            "items" : {
-                "type" : "object",
-                "properties" : {
-                    "nom" : {
-                        "type" : "string"
-                    },
-                    "prix" : {
-                        "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montant.schema.json"
+        }
+    },
+    "oneOf": [
+        {
+            "properties" : {
+                "type" : { 
+                    "title" : "Type de crédit",
+                    "description" : "Crédit à la consommation affecté",
+                    "enum" : ["consommationAffecte"]
+                },
+                "enseigne" : {
+                    "title" : "Enseigne partenaire",
+                    "description" : "Enseigne partenaire à travers laquelle le crédit a été souscrit",
+                    "type" : "string"
+                },
+                "biensFinances" : {
+                    "title" : "Biens financés",
+                    "description" : "Liste des biens financés",
+                    "type" : "array",
+                    "items" : {
+                        "type" : "object",
+                        "properties" : {
+                            "title" : "Nom",
+                            "description" : "Description du bien financé",                   
+                            "nom" : {
+                                "type" : "string"
+                            },
+                            "prix" : {
+                                "title" : "Prix",
+                                "description" : "Prix TTC du bien financé",  
+                                "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montant.schema.json"
+                            }
+                        }
                     }
                 }
             }
         }
-    }
+    ]
+
 }

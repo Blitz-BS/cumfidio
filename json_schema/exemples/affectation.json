@@ -109,11 +109,11 @@
                             "reference": "F",
                             "referentiel": "emetteur"
                         },
-                        "emprunteur": {
+                        "emprunteurs": [{
                             "type" : "personnePhysique",
                             "prenom": "Sébastien",
                             "nom": "Dujardin"
-                        },
+                        }],
                         "preteur": {
                             "type" : "personneMorale",
                             "raisonSociale": "BNP"

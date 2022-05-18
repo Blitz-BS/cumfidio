@@ -2,17 +2,22 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/creance.schema.json",
     "title": "Créance",
-    "description": "Un créance est un montant dû par un débiteur à un créancier. Il s'agit d'un type de dossier",
+    "description": "Une créance est un montant dû par un débiteur à un créancier",
     "type": "object",
     "properties": {
         "id" : {
-            "description" : "identifiant de la créance",
+            "title" : "Identifiant",
+            "description" : "Identifiant de la créance",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "statut" : {
+            "title" : "Statut",
+            "description" : "Statut de la créance",            
             "enum" : [ "due", "impayeDefinitif"]
         },
         "debiteur" : {
+            "title" : "Débiteur",
+            "description" : "Le débiteur est une personne physique ou morale", 
             "required": ["type"],
             "oneOf": [
                 { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
@@ -20,6 +25,8 @@
             ]
         },
         "debiteurSecondaire" : {
+            "title" : "Débiteur secondaire",
+            "description" : "Le débiteur secondaire est le garant ou caution du débiteur principal", 
             "required": ["type"],
             "oneOf": [
                 { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
@@ -27,6 +34,8 @@
             ]
         },        
         "creancier" : {
+            "title" : "Créancier",
+            "description" : "Le créancier est une personne physique ou morale",             
             "required": ["type"],
             "oneOf" : [
                 { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
@@ -38,8 +47,8 @@
         },
         "origine" : {
             "type" : "object",
-            "title" : "origine de la créance",
-            "description" : "plusieurs origine sont possibles : crédit...",
+            "title" : "Origine de la créance",
+            "description" : "Plusieurs origines sont possibles : crédit...",
             "oneOf" : [
                 {
                     "properties" : {

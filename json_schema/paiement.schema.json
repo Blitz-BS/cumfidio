@@ -7,12 +7,16 @@
     "type": "object",
     "properties": {
         "moyen" : {
+          "title" : "Moyen de paiement",
+          "description" : "Moyens disponibles : carte bancaire, chèque, virement, prélèvement, TIP, traite et billet à ordre",
           "enum" : ["carteBancaire", "cheque", "virement", "prelevement", "titreInterbancaireDePaiement", "traite", "billetAordre"]
         },
         "montant" : {
           "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montant.schema.json"
         },
         "timestamp" : {
+          "title" : "Date et heure",
+          "description" : "Date et heure du paiement",
           "type" : "string",
           "format" : "date-time"
         }

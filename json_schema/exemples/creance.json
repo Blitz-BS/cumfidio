@@ -90,6 +90,7 @@
     },
     "origine": {
         "credit": {
+            "type" : "consommationAffecte",
             "id": {
                 "reference": "F",
                 "referentiel": "emetteur"

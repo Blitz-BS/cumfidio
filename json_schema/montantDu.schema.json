@@ -10,9 +10,10 @@
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montant.schema.json"
         },
         "timestamp" : {
+            "title" : "Date et heure",
+            "description" : "Date à laquelle le montant dû est constaté",
             "type" : "string",
-            "format" : "date-time",
-            "description" : "date à laquelle le montant dû est constaté"
+            "format" : "date-time"
         }
     }
 }

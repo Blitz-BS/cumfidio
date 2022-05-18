@@ -13,6 +13,8 @@
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "timestamp" : {
+            "title": "Date et heure",
+            "description": "Date et heure du message",            
             "type" : "string",
             "format" : "date-time"
         },
