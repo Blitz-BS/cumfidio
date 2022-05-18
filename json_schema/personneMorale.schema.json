@@ -6,15 +6,22 @@
     "type": "object",
     "properties": {
         "id" : {
+            "title" : "Référence",
+            "description" : "Référence de la personne morale",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "type" : {
+            "title" : "Type de la personne",
+            "description" : "Ici une personne morale",            
             "enum" : ["personneMorale"]
         },
         "raisonSociale" : {
+            "title" : "Raison sociale",
             "type": "string"
         },
         "marques" : {
+            "title" : "Marques",
+            "description" : "Liste des marques sous lesquelles peuvent apparaître la personne morale",              
             "type" : "array",
             "items" : {
                 "type" : "string"

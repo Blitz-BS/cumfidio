@@ -6,49 +6,71 @@
     "type": "object",
     "properties": {
         "id" : {
+            "title" : "Référence",
+            "description" : "Référence de la personne physique",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "type" : {
+            "title" : "Type de la personne",
+            "description" : "Ici une personne physique",  
             "enum" : ["personnePhysique"]
         },
-        "prenom" : {
-            "type": "string"
+        "prenoms" : {
+            "title" : "Prénoms",
+            "description" : "Liste des prénoms",  
+            "type" : "array",
+            "items" : {
+                "type": "string"
+            }
         },
         "nom" : {
+            "title" : "Nom de famille",
+            "description" : "Le nom de famille est le nom de naissance",              
             "type": "string"
         },
         "nomMarital" : {
+            "title" : "Nom marital",
+            "description" : "Le nom marital est le nom de famille de l'époux ou de l'épouse",
             "type": "string"
         },
         "dateDeNaissance" : {
+            "title" : "Date de naissance",
+            "description" : "YYYY-MM-DD",
             "type" : "string",
-            "format" : "date",
-            "description" : "YYYY-MM-DD"
+            "format" : "date"
         },
         "communeNaissance" : {
+            "title" : "Commune de naissance",
             "type" : "string"
         },
         "civilite" : {
+            "title" : "Civilité",
             "enum" : ["Mr", "Mme", "Mr et Mme", "Mlle"]
         },
         "adresses" : {
+            "title" : "Adresses",
+            "description" : "Liste des adresses de la personne physique",            
             "type" : "array",
             "items" : {
                 "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/adresse.schema.json"
             }
         },
         "telephones" : {
+            "title" : "Téléphones",
+            "description" : "Liste des numéros de téléphone",   
             "type" : "array",
             "items" : {
                 "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/telephone.schema.json"
             }            
         },
         "emails" : {
+            "title" : "Emails",
+            "description" : "Liste des adresses emails",  
             "type" : "array",
             "items" : {
                 "type" : "string",
                 "format" : "email"
-            }            
+            }
         }
     }
 }

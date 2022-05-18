@@ -7,9 +7,13 @@
     "type": "object",
     "properties": {
         "reference": {
+          "title" : "Référence",
+          "description" : "Identifiant ou référence",  
           "type": "string"
         },
         "referentiel": {
+          "title" : "Référentiel",
+          "description" : "Référentiel utilisé pour cette référence",            
           "enum" : [ "emetteur" , "destinataire", "donneurDordre", "prestataire" ]
         }
     }

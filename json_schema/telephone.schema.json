@@ -7,11 +7,15 @@
     "type": "object",
     "properties": {
         "numero": {
+          "title" : "Numéro de téléphone",
+          "description": "Format international. exemple : +33614194315",
           "type": "string",
-          "pattern" : "^\\+[0-9]{9,17}$",
-          "description": "Format international. exemple : +33614194315"
+          "pattern" : "^\\+[0-9]{9,17}$"
+          
         },
         "type": {
+          "title" : "Type de numéro",
+          "description": "Fixe ou mobile",
           "enum" : ["fixe", "mobile"]
         }
     }

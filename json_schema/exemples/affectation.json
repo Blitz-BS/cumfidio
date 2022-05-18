@@ -25,7 +25,7 @@
                         "reference": "D",
                         "referentiel": "emetteur"
                     },
-                    "prenom": "Jeanne",
+                    "prenoms": ["Jeanne"],
                     "nom": "Dupont",
                     "nomMarital": "Durand",
                     "dateDeNaissance": "1977-06-14",
@@ -88,7 +88,7 @@
                                 "reference": "E",
                                 "referentiel": "emetteur"
                             },
-                            "prenom": "Alain",
+                            "prenoms": ["Alain"],
                             "nom": "Martin",
                             "emails": [
                                 "amartin@blitzbs.com"
@@ -111,7 +111,7 @@
                         },
                         "emprunteurs": [{
                             "type" : "personnePhysique",
-                            "prenom": "Sébastien",
+                            "prenoms": ["Sébastien"],
                             "nom": "Dujardin"
                         }],
                         "preteur": {

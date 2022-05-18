@@ -6,25 +6,30 @@
     "type": "object",
     "properties": {
         "id" : {
-            "description" : "identifiant du titre",
+            "title" : "Identifiant du titre",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "statut" : {
+            "title" : "Statut du titre",
+            "description": "Délivré ou prescrit",
             "enum" : [ "delivre", "prescrit"]
         },
         "idCreance" : {
-            "description" : "identifiant de la créance",
+            "title" : "Identifiant de la créance",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
         "date" : {
+            "title" : "Date de la créance",         
             "type" : "string",
             "format" : "date"
         },
         "dateExecutoire" : {
+            "title" : "Date exécutoire",  
             "type" : "string",
             "format" : "date"
         },
         "libelle" : {
+            "title" : "Libellé", 
             "type" : "string"
         }
     }
