@@ -1,10 +1,11 @@
 Cumfidio permet d'échanger des messages structurés entre des donneurs d'ordre et des prestataires. 
+
 # structure des messages
 La structure de ces messages suit la norme [JSON schema](https://json-schema.org/). La structure des messages est disponible dans le répertoire [json_schema](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema).
 
 La [spécification complète](https://json-schema.org/understanding-json-schema/UnderstandingJSONSchema.pdf) des JSON schémas répondra à toutes vos questions !
 
-On décrit ci-dessous l'ensemble des schémas utilisés
+On décrit ci-dessous les principaux schémas utilisés
 
 ## schéma [message](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/message.schema.json)
 Un message comprend 4 propriétés obligatoires
@@ -37,22 +38,27 @@ _exemple de [message de type affectation](https://github.com/Blitz-BS/cumfidio/b
 ### évènement de type désaffectation 
 Un évènement de type désaffectation permet de désaffecter un dossier d'un prestataire. 
 
+_exemple de [message de type désaffectation](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/desaffectation.json)_
+
 ### évènement de type paiement
 Un évènement de type paiement permet d'enregistrer un paiement sur un dossier.
 
 Un évènement de type paiement comprend 3 propriétés
 * le [paiement](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/paiement.schema.json) lui même
 * la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) du dossier
-* l'identifiant de l'organisation à l'origine du paiement. Ce peut être par exemple le prestataire ou le donneur d'ordre.
+* la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) de l'organisation à l'origine du paiement. Ce peut être par exemple le prestataire ou le donneur d'ordre.
+
+_exemple de [message de type paiement](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/paiement.json)_
 
 ### évènement de type modification de statut
 Cet évènement permet de modifier le statut d'un dossier ou d'une de ses pièces.
 
-Une modification comprend deux propriétés
+Une modification comprend trois propriétés
 * la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) du dossier
-* la transition. 
+* le type d'objet dont le statut est modifié.
+* la transition qui modifie le statut.
 
-Pour l'instant la seule transition disponible est `passageEnIrrecouvrable`. 
+Pour l'instant la seule transition disponible est `passageEnIrrecouvrable` appliquée à l'objet `creance`. 
 
 > le formalisme suivi est celui des [automates finis](https://fr.wikipedia.org/wiki/Automate_fini). L'objet peut être dans un nombre fini de statuts (états). L'application d'une transition modifie le statut de l'objet. On pourra décrire des systèmes complexes de statuts (états) grâce à des [diagrammes états-transitions](https://fr.wikipedia.org/wiki/Diagramme_%C3%A9tats-transitions)
 

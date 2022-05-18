@@ -63,7 +63,7 @@
                     "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
                 },
                 "objet" : {
-                    "enum" : ["dossier","creance"]
+                    "enum" : ["dossier","creance","titre"]
                 },
                 "transition" : {
                     "enum" : ["passageEnIrrecouvrable"]

@@ -7,15 +7,19 @@
     "type": "object",
     "properties": {
         "numero" : {
-          "type" : "string",
-          "description": "numéro de la rue par exemple : 3bis"
+          "title" : "numéro",
+          "description": "exemple : 3bis",
+          "type" : "string"
         },
         "rue" : {
+          "title" : "rue",
+          "description" : "exemple : avenue Saint Martin",
           "type" : "string"
         },
         "adresse" : {
-          "type" : "string",
-          "description": "concatenation des informations sur l'adresse."
+          "title" : "adresse",
+          "description": "concatenation des informations sur l'adresse. exemple : 3bis avenue Saint Martin",
+          "type" : "string"
         },
         "etage" : {
           "type" : "string"
