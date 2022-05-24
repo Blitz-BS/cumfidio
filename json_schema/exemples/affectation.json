@@ -30,6 +30,7 @@
                     "nomMarital": "Durand",
                     "dateDeNaissance": "1977-06-14",
                     "communeNaissance": "Paris",
+                    "paysDeNaissance" : "FR",
                     "civilite": "Mme",
                     "adresses": [
                         {
@@ -57,7 +58,8 @@
                     "emails": [
                         "zz@gmail.com",
                         "uu@yahoo.fr"
-                    ]
+                    ],
+                    "profession" : "commerçant"
                 },
                 "creancier": {
                     "type" : "personneMorale",
@@ -69,8 +71,7 @@
                     "marques": [
                         "Blitz"
                     ],
-                    "adresses": [
-                        {
+                    "adresseSiegeSocial": {
                             "numero": "265",
                             "rue": "rue Denis Papin",
                             "codePostal": "38090",
@@ -80,8 +81,7 @@
                                 "latitude": 32.7,
                                 "longitude": 45.5
                             }
-                        }
-                    ],
+                    },
                     "contacts": [
                         {
                             "id": {
@@ -94,7 +94,10 @@
                                 "amartin@blitzbs.com"
                             ]
                         }
-                    ]
+                    ],
+                    "formeLegaleNiv1" : "5",
+                    "formeLegaleNiv2" : "54",
+                    "formeLegaleNiv3" : "5410"                  
                 },
                 "montantDu": {
                     "montant": {
@@ -137,7 +140,7 @@
                     }
                 }
             },
-            "titre" : {
+            "titreExecutoire" : {
                 "id": {
                     "reference": "D",
                     "referentiel": "emetteur"

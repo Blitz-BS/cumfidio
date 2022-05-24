@@ -43,6 +43,23 @@
             ]
         },
         "montantDu" : {
+            "title" : "Montant dû",
+            "description" : "Total du montant dû : principal, intérêts et accessoires",  
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montantDu.schema.json"
+        },
+        "principal" : {
+            "title" : "Principal",
+            "description" : "Montant principal dû",  
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montantDu.schema.json"
+        },
+        "interets" : {
+            "title" : "Intérêts",
+            "description" : "Montant des intérêts dû",  
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montantDu.schema.json"
+        },
+        "accessoires" : {
+            "title" : "Accessoires",
+            "description" : "Montant des accessoires dû",  
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/montantDu.schema.json"
         },
         "origine" : {

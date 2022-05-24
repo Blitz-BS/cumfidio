@@ -27,17 +27,16 @@
                 "type" : "string"
             }
         },
-        "adresses" : {
-            "type" : "array",
-            "items" : {
-                "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/adresse.schema.json"
-            }
+        "adresseSiegeSocial" : {
+            "title" : "Adresse du siège social",
+            "description" : "Adresse du siège social", 
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/adresse.schema.json"
         },
         "telephones" : {
             "type" : "array",
             "items" : {
                 "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/telephone.schema.json"
-            }            
+            } 
         },
         "emails" : {
             "type" : "array",
@@ -51,6 +50,37 @@
             "items" : {
                 "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json"
             }              
+        },
+        "formeLegalNiv1" : {
+            "title" : "Forme Légale Niveau 1",
+            "description" : "voir Description/juridical-forms.csv", 
+            "type" : "string"
+        },
+        "formeLegalNiv2" : {
+            "title" : "Forme Légale Niveau 2",
+            "description" : "voir Description/juridical-forms.csv", 
+            "type" : "string"
+        },
+        "formeLegalNiv3" : {
+            "title" : "Forme Légale Niveau 3",
+            "description" : "voir Description/juridical-forms.csv", 
+            "type" : "string"
+        },
+        "representantLegal" : {
+            "title" : "Représentant légal",
+            "description" : "Le représentant légal est une personne physique ou morale",             
+            "required": ["type","titre"],
+            "properties" : {
+                "titre" : {
+                    "title" : "Titre",
+                    "description" : "Titre du représentant légal",
+                    "type" : "string"
+                },
+                "oneOf" : [
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+                ]
+            }
         }
     }
 }

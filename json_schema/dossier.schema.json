@@ -7,11 +7,14 @@
         "statut" : {
             "enum" : ["ouvert","cloture"]
         },
+        "requeteInjonctionDePayer" : { 
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/requeteInjonctionDePayer.schema.json"
+        },
         "creance" : { 
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/creance.schema.json"
         },
-        "titre" : { 
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/titre.schema.json"
+        "titreExecutoire" : { 
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/titreExecutoire.schema.json"
         }
     }
 }

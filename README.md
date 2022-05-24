@@ -64,8 +64,18 @@ Pour l'instant la seule transition disponible est `passageEnIrrecouvrable` appli
 
 ## schéma [dossier](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/dossier.schema.json)
 Un dossier a possiblement un statut et des pièces. Les pièces possibles sont
+* une [requête en injonction de payer](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/requeteInjonctionDePayer.schema.json)
 * une [créance](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/creance.schema.json)
 * un [titre](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/titre.schema.json)
+
+## schéma [requête en injonction de payer](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/requeteInjonctionDePayer.schema.json)
+Une requête en injonction de payer peut être une pièce d'un dossier.
+
+Une créance comprend les propriétés suivantes
+* `id` : identifiant de la requête
+* `date` : date de la requête
+* `demandeur`: personne physique ou morale
+* `creance` : créance pour laquelle la requête est effectuée
 
 ## schéma [créance](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/creance.schema.json)
 Une créance peut être une pièce d'un dossier.

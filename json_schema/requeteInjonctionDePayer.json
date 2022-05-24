@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/requeteInjonctionDePayer.schema.json",
+    "title": "Requête en injonction de payer",
+    "description": "Requête en injonction de payer",
+    "type": "object",
+    "properties": {
+        "id" : {
+            "title" : "Identifiant de la demande",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+        },
+        "date" : {
+            "title" : "Date de la demande",         
+            "type" : "string",
+            "format" : "date"
+        },
+        "demandeur" : {
+            "title" : "Demandeur",
+            "description": "Identité du demandeur",
+            "required": ["type"],
+            "oneOf" : [
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+            ]
+        },
+        "creance" : {
+            "title" : "Créance",
+            "description": "Créance", 
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/creance.schema.json"       
+        }
+    }
+}

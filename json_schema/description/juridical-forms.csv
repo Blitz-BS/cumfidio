@@ -1,0 +1,272 @@
+﻿level1_code;level1_label;level1_active;level2_code;level2_label;level2_active;level3_code;level3_label;level3_active
+1;Entrepreneur individuel;true;10;Entrepreneur individuel;true;1000;Entrepreneur individuel;true
+1;Entrepreneur individuel;true;11;Affaire personnelle artisan commerçant;false;1100;Affaire personnelle artisan commerçant;false
+1;Entrepreneur individuel;true;12;Affaire personnelle commerçant;false;1200;Affaire personnelle commerçant;false
+1;Entrepreneur individuel;true;13;Affaire personnelle artisan;false;1300;Affaire personnelle artisan;false
+1;Entrepreneur individuel;true;14;Affaire personnelle officier public ou ministériel;false;1400;Affaire personnelle officier public ou ministériel;false
+1;Entrepreneur individuel;true;15;Affaire personnelle profession libérale;false;1500;Affaire personnelle profession libérale;false
+1;Entrepreneur individuel;true;16;Affaire personnelle exploitant agricole;false;1600;Affaire personnelle exploitant agricole;false
+1;Entrepreneur individuel;true;17;Affaire Personnelle agent commercial;false;1700;Affaire Personnelle agent commercial;false
+1;Entrepreneur individuel;true;18;Affaire personnelle gérant associé de société;false;1800;Affaire personnelle gérant associé de société;false
+1;Entrepreneur individuel;true;19;Affaire personnelle personne physique;false;1900;Affaire personnelle personne physique;false
+2;Groupement de droit privé non doté de la personnalité morale;true;21;Indivision;true;2110;Indivision entre personnes physiques;true
+2;Groupement de droit privé non doté de la personnalité morale;true;21;Indivision;true;2120;Indivision avec personne morale;true
+2;Groupement de droit privé non doté de la personnalité morale;true;22;Société créée de fait;true;2210;Société de fait entre personnes physiques;true
+2;Groupement de droit privé non doté de la personnalité morale;true;22;Société créée de fait;true;2220;Société de fait avec personne morale;true
+2;Groupement de droit privé non doté de la personnalité morale;true;23;Société en participation;true;2310;Société en participation entre personnes physiques;true
+2;Groupement de droit privé non doté de la personnalité morale;true;23;Société en participation;true;2320;Société en participation avec personne morale;true
+2;Groupement de droit privé non doté de la personnalité morale;true;23;Société en participation;true;2385;Société en participation de professions libérales;true
+2;Groupement de droit privé non doté de la personnalité morale;true;24;Fiducie;true;2400;Fiducie;true
+2;Groupement de droit privé non doté de la personnalité morale;true;27;Paroisse hors zone concordataire;true;2700;Paroisse hors zone concordataire;true
+2;Groupement de droit privé non doté de la personnalité morale;true;29;Autre groupement de droit privé non doté de la personnalité morale;true;2900;Groupement de droit privé non doté de la personnalité morale;true
+3;Personne morale de droit étranger;true;31;Personne morale de droit étranger, immatriculée au RCS (registre du commerce et des sociétés);true;3110;Représentation d'Etat ou organisme public étranger immatriculé;true
+3;Personne morale de droit étranger;true;31;Personne morale de droit étranger, immatriculée au RCS (registre du commerce et des sociétés);true;3120;Société étrangère immatriculée au RCS;true
+3;Personne morale de droit étranger;true;32;Personne morale de droit étranger, non immatriculée au RCS;true;3205;Organisation internationale;true
+3;Personne morale de droit étranger;true;32;Personne morale de droit étranger, non immatriculée au RCS;true;3210;Etat, collectivité ou établissement public étranger;true
+3;Personne morale de droit étranger;true;32;Personne morale de droit étranger, non immatriculée au RCS;true;3220;Société étrangère non immatriculée au RCS;true
+3;Personne morale de droit étranger;true;32;Personne morale de droit étranger, non immatriculée au RCS;true;3290;Société de droit étranger;true
+4;Personne morale de droit public soumise au droit commercial;true;41;Etablissement public ou régie à caractère industriel ou commercial;true;4110;Etablissement public national doté d'un comptable public;true
+4;Personne morale de droit public soumise au droit commercial;true;41;Etablissement public ou régie à caractère industriel ou commercial;true;4120;Etablissement public national non doté d'un comptable public;true
+4;Personne morale de droit public soumise au droit commercial;true;41;Etablissement public ou régie à caractère industriel ou commercial;true;4130;Exploitant public;true
+4;Personne morale de droit public soumise au droit commercial;true;41;Etablissement public ou régie à caractère industriel ou commercial;true;4140;Etablissement public local à caractère industriel ou commercial;true
+4;Personne morale de droit public soumise au droit commercial;true;41;Etablissement public ou régie à caractère industriel ou commercial;true;4150;Collectivité locale à caractère industriel ou commercial;true
+4;Personne morale de droit public soumise au droit commercial;true;41;Etablissement public ou régie à caractère industriel ou commercial;true;4160;Institution Banque de France;true
+5;Société commerciale;true;51;Société coopérative commerciale particulière;true;5191;Société de caution mutuelle;true
+5;Société commerciale;true;51;Société coopérative commerciale particulière;true;5192;Société coopérative de banque populaire;true
+5;Société commerciale;true;51;Société coopérative commerciale particulière;true;5193;Caisse de crédit maritime mutuel;true
+5;Société commerciale;true;51;Société coopérative commerciale particulière;true;5194;Caisse fédérale de crédit mutuel;true
+5;Société commerciale;true;51;Société coopérative commerciale particulière;true;5195;Association coopérative inscrite;true
+5;Société commerciale;true;51;Société coopérative commerciale particulière;true;5196;Caisse d'épargne et de prévoyance à forme coopérative;true
+5;Société commerciale;true;52;Société en nom collectif;true;5202;Société en nom collectif;true
+5;Société commerciale;true;52;Société en nom collectif;true;5203;Société en nom collectif coopérative;true
+5;Société commerciale;true;53;Société en commandite;true;5306;Société en commandite simple;true
+5;Société commerciale;true;53;Société en commandite;true;5307;Société en commandite simple coopérative;true
+5;Société commerciale;true;53;Société en commandite;true;5310;Société en commandite par actions;true
+5;Société commerciale;true;53;Société en commandite;true;5308;Société en commandite par actions coopérative;true
+5;Société commerciale;true;53;Société en commandite;true;5309;Société en libre partenariat;false
+5;Société commerciale;true;53;Société en commandite;true;5370;Société de Participations Financières de Profession Libérale Société en commandite par actions;true
+5;Société commerciale;true;53;Société en commandite;true;5385;Société d'exercice libéral en commandite par actions;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5410;Société à responsabilité limitée nationale;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5415;Société à responsabilité limitée d'économie mixte;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5422;SICOMI exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5426;Société immobilière de gestion exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5430;SAFER exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5431;Société mixte d'intérêt agricole exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5432;Société d'intérêt collectif agricole exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5442;Société à responsabilité limitée d'attribution;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5443;Société à responsabilité limitée coopérative de construction;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5451;Société à responsabilité limitée coopérative de consommation;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5453;Société à responsabilité limitée coopérative artisanale;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5454;Société à responsabilité limitée coopérative d'intérêt maritime;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5455;Société à responsabilité limitée coopérative de transport;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5458;SCOP exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5459;Union de sociétés coopératives exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5460;Société coopérative exploitée sous forme de SARL;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5470;Société de Participations Financières de Profession Libérale Société à responsabilité;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5485;Société d'exercice libéral à responsabilité limitée;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5498;SARL unipersonnelle;true
+5;Société commerciale;true;54;Société à responsabilité limitée;true;5499;Société à responsabilité limitée;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5505;Société anonyme à participation ouvrière à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5510;Société anonyme nationale à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5515;Société anonyme d'économie mixte à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5520;SICAV à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5522;SICOMI à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5525;SA immobilière d'investissement à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5530;SAFER à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5531;Société anonyme mixte d'intérêt agricole à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5532;Société anonyme mixte d'intérêt collectif agricole à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5542;SA d'attribution à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5543;Société anonyme coopérative de construction à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5546;SA de HLM à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5547;Société coopérative de production HLM à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5548;SA de crédit immobilier à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5551;SA coopérative de consommation à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5552;SA coopérative de commerçants - détaillants à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5553;SA coopérative artisanale à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5554;SA coopérative d'intérêt maritime à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5555;SA coopérative de transport à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5558;SCOP à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5559;SA union de sociétés coopératives à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5560;SA coopérative à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5570;Sté de Participations Financières de Profession Libérale Société anonyme à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5585;Société d'exercice libéral à forme anonyme à conseil d'administration;true
+5;Société commerciale;true;55;Société anonyme à conseil d'administration;true;5599;SA à conseil d'administration;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5605;SA à participation ouvrière à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5610;SA nationale à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5615;SA d'économie mixte à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5620;SICAV à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5622;SICOMI à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5625;Société immobilière d'investissement anonyme à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5630;SAFER anonyme à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5631;Société mixte d'intérêt agricole exploitée sous forme de SA à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5632;Société d'intérêt collectif agricole exploitée sous forme de SA à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5642;SA d'attribution à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5643;SA coopérative de construction à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5646;SA HLM à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5647;SA coopérative de production HLM à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5648;SA de crédit immobilier à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5651;SA coopérative de consommation à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5652;SA coopérative de commerçants - détaillants à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5653;SA coopérative artisanale à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5654;SA coopérative d'intérêt maritime à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5655;SA coopérative de transport à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5658;SCOP à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5659;SA union de sociétés coopératives à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5660;SA coopérative à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5670;Société de Participations Financières de Profession Libérale Société anonyme à diretcoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5685;Société d'exercice libéral à forme anonyme à directoire;true
+5;Société commerciale;true;56;Société anonyme à directoire;true;5699;SA à directoire;true
+5;Société commerciale;true;57;Société par actions simplifiée;true;5710;Société par actions simplifiée;true
+5;Société commerciale;true;57;Société par actions simplifiée;true;5720;SASU Société par actions simplifiée à associé unique;true
+5;Société commerciale;true;57;Société par actions simplifiée;true;5770;Société de Participations Financières de Profession Libérale Société par actions;true
+5;Société commerciale;true;57;Société par actions simplifiée;true;5785;Société d'exercice libéral par action simplifiée;true
+5;Société commerciale;true;58;Société européenne;true;5800;Société européenne;true
+6;Autre personne morale immatriculée au RCS;true;61;Caisse d'épargne et de prévoyance;true;6100;Caisse d'épargne et de prévoyance;true
+6;Autre personne morale immatriculée au RCS;true;62;Groupement d'intérêt économique;true;6210;GEIE - Groupement européen d'intérêt économique;true
+6;Autre personne morale immatriculée au RCS;true;62;Groupement d'intérêt économique;true;6220;Groupement d'intérêt économique;true
+6;Autre personne morale immatriculée au RCS;true;63;Société coopérative agricole;true;6316;CUMA - Coopérative d'utilisation de matériel agricole en commun;true
+6;Autre personne morale immatriculée au RCS;true;63;Société coopérative agricole;true;6317;Société coopérative agricole;true
+6;Autre personne morale immatriculée au RCS;true;63;Société coopérative agricole;true;6318;Union de sociétés coopératives agricoles;true
+6;Autre personne morale immatriculée au RCS;true;64;Société d'assurance mutuelle;true;6411;Société d'assurance mutuelle;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6511;Sociétés Interprofessionnelles de Soins Ambulatoires;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6521;Société civile de placement collectif immobilier;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6532;Société d'intérêt collectif agricole;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6533;Groupement agricole d'exploitation en commun;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6534;Groupement foncier agricole;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6535;Groupement agricole foncier;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6536;Groupement forestier;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6537;Groupement pastoral;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6538;Groupement foncier rural;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6539;Société civile foncière;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6540;Société civile immobilière;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6541;Société civile immobilière de construction - vente;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6542;Société civile d'attribution;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6543;Société civile coopérative de construction;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6544;Société civile immobilière d'accession progressive à la propriété;false
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6551;Société civile coopérative de consommation;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6554;Société civile coopérative d'intérêt maritime;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6558;Société civile coopérative entre médecins;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6560;Société civile coopérative;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6561;Société civile professionnelle d'avocats;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6562;Société civile professionnelle d'avocats aux conseils;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6563;Société civile professionnelle d'avoués d'appel;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6564;Société civile professionnelle d'huissiers;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6565;Société civile professionnelle de notaires;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6566;Société civile professionnelle de commissaires-priseurs;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6567;Société civile professionnelle de greffiers de tribunal de commerce;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6568;Société civile professionnelle de conseils juridiques;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6569;Société civile professionnelle de commissaires aux comptes;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6571;Société civile professionnelle de médecins;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6572;Société civile professionnelle de dentistes;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6573;Société civile professionnelle d'infirmiers;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6574;Société civile professionnelle de masseurs-kinésithérapeutes;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6575;Société civile professionnelle de directeurs de laboratoires d'analyse médicale;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6576;Société civile professionnelle de vétérinaires;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6577;Société civile professionnelle de géomètres-experts;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6578;Société civile professionnelle d'architectes;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6585;Société civile professionnelle;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6588;Société civile laitière;false
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6589;Société civile de moyens;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6595;Caisse locale de crédit mutuel;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6596;Caisse de crédit agricole mutuel;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6597;Société civile d'exploitation agricole SCEA;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6598;EARL - Exploitation agricole à responsabilité limitée;true
+6;Autre personne morale immatriculée au RCS;true;65;Société civile;true;6599;Société civile;true
+6;Autre personne morale immatriculée au RCS;true;69;Autre personne morale de droit privé inscrite au registre du commerce et des sociétés;true;6901;Personnes morales de droit privé inscrites au Registre du Commerce et des Sociétés;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7111;Administration de l'Etat, autorité constitutionnelle;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7112;Administration de l'Etat, autorité administrative indépendante;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7113;Administration de l'Etat, Ministère;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7120;Administration de l'Etat, service central d'un ministère;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7150;Administration de l'Etat, service du Ministère de la Défense;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7160;Administration de l'Etat, service déconcentré national d'un ministère;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7171;Administration de l'Etat, service déconcentré à compétence (inter-)régionale;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7172;Administration de l'Etat, service déconcentré à compétence (inter-)départementale;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7179;Administration de l'Etat, service déconcentré à compétence territoriale;true
+7;Personne morale et organisme soumis au droit administratif;true;71;Administration de l'état;true;7190;Administration de l'Etat, Ecole Nationale sans personnalité morale;true
+7;Personne morale et organisme soumis au droit administratif;true;72;Collectivité territoriale;true;7210;Collectivité territoriale commune;true
+7;Personne morale et organisme soumis au droit administratif;true;72;Collectivité territoriale;true;7220;Collectivité territoriale département;true
+7;Personne morale et organisme soumis au droit administratif;true;72;Collectivité territoriale;true;7225;Collectivité et territoire d’Outre-Mer;true
+7;Personne morale et organisme soumis au droit administratif;true;72;Collectivité territoriale;true;7229;Collectivité territoriale;true
+7;Personne morale et organisme soumis au droit administratif;true;72;Collectivité territoriale;true;7230;Collectivité territoriale région;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7312;Etablissement public commune associée;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7313;Etablissement public section de commune;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7314;Etablissement public ensemble urbain;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7321;Etablissement public association syndicale autorisée;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7322;Etablissement public association foncière urbaine;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7323;Etablissement public association foncière de remembrement;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7331;Etablissement public local d'enseignement;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7340;Pôle métropolitain;false
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7341;Etablissement public secteur de commune;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7342;Etablissement district urbain;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7343;Etablissement public communauté urbaine;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7344;Métropole;false
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7345;Etablissement public syndical à vocation multiple;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7346;Communauté de communes;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7347;Communauté de villes;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7348;Communauté d'agglomérations;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7349;Etablissement public local de coopération non spécialisé;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7351;Etablissement public institutionnel ou entente interdépartementale;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7352;Etablissement public institutionnel ou entente interrégionale;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7353;Etablissement public syndicat intercommunal à vocation unique;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7354;Etablissement public syndicat mixte communal;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7355;Etablissement public syndicat mixte;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7356;Commission syndicale pour la gestion des biens indivis des communes;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7357;Pôle d'équilibre territorial et rural;false
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7361;Etablissement public centre communal d'action sociale;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7362;Etablissement public caisse des écoles;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7363;Etablissement public caisse de crédit municipal;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7364;Etablissement public établissement hospitalier;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7365;Etablissement syndicat inter-hospitalier;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7366;Etablissement public local social et médico-social;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7367;Centre Intercommunal d'action sociale;false
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7371;Etablissement public office d'habitation à loyer modéré;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7372;Etablissement public service départemental d'incendie;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7373;Etablissement public local culturel;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7378;Régie d'une collectivité locale à caractère administratif ;false
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7379;Etablissement public local;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7381;Etablissement public organisme consulaire;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7382;Etablissement public national d'administration centrale;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7383;Etablissement public national scientifique, culturel et professionnel;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7384;Etablissement public national d'enseignement;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7385;Etablissement public national à compétence territoriale limitée;true
+7;Personne morale et organisme soumis au droit administratif;true;73;Etablissement public administratif;true;7389;Etablissement public national à caractère administratif;true
+7;Personne morale et organisme soumis au droit administratif;true;74;Autre personne morale de droit public administratif;true;7410;Groupement d'intérêt public;true
+7;Personne morale et organisme soumis au droit administratif;true;74;Autre personne morale de droit public administratif;true;7430;Etablissement public cultes d'Alsace-Lorraine;true
+7;Personne morale et organisme soumis au droit administratif;true;74;Autre personne morale de droit public administratif;true;7450;Etablissement public administratif, cercle ou foyer dans les armées;true
+7;Personne morale et organisme soumis au droit administratif;true;74;Autre personne morale de droit public administratif;true;7470;Groupement de coopération sanitaire à gestion publique;true
+7;Personne morale et organisme soumis au droit administratif;true;74;Autre personne morale de droit public administratif;true;7490;Personne morale de droit administratif;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8110;Organisme de prévoyance sociale à régime général de la Sécurité Sociale;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8120;Organisme de prévoyance sociale à régime spécial de la Sécurité Sociale;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8130;Organisme de prévoyance sociale institution de retraite complémentaire;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8140;Organisme de prévoyance sociale mutualiste sociale agricole;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8150;Organisme de prévoyance sociale régime maladie des non-salariés;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8160;Organisme de prévoyance sociale régime vieillesse indépendant de la Sécurité Sociale;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8170;Organisme de prévoyance sociale régime d'assurance chômage;true
+8;Organisme privé spécialisé;true;81;Organisme gérant un régime de protection sociale à adhésion obligatoire;true;8190;Organisme de prévoyance sociale;true
+8;Organisme privé spécialisé;true;82;Organisme mutualiste;true;8210;Société mutualiste;true
+8;Organisme privé spécialisé;true;82;Organisme mutualiste;true;8250;Organisme mutualiste assurance mutuelle agricole;true
+8;Organisme privé spécialisé;true;82;Organisme mutualiste;true;8290;Organisme mutualiste;true
+8;Organisme privé spécialisé;true;83;Comité d'entreprise;true;8310;Comité central d'entreprise;true
+8;Organisme privé spécialisé;true;83;Comité d'entreprise;true;8311;Comité d'établissement;true
+8;Organisme privé spécialisé;true;84;Organisme professionnel;true;8410;Syndicat de salariés;true
+8;Organisme privé spécialisé;true;84;Organisme professionnel;true;8420;Syndicat patronal;true
+8;Organisme privé spécialisé;true;84;Organisme professionnel;true;8450;Ordre professionnel ou assimilé;true
+8;Organisme privé spécialisé;true;84;Organisme professionnel;true;8470;Centre technique industriel ou comité professionnel du développement économique;true
+8;Organisme privé spécialisé;true;84;Organisme professionnel;true;8490;Organisme professionnel;true
+8;Organisme privé spécialisé;true;85;Organisme de retraite à adhésion non obligatoire;true;8510;Institution de prévoyance;true
+8;Organisme privé spécialisé;true;85;Organisme de retraite à adhésion non obligatoire;true;8520;Institution de retraite supplémentaire;true
+9;Groupement de droit privé;true;91;Syndicat de propriétaires;true;9110;Syndicat de copropriété;true
+9;Groupement de droit privé;true;91;Syndicat de propriétaires;true;9150;Association syndicale libre;true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9210;Association non déclarée;true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9220;Association déclarée;true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9221;"Association déclarée ""entreprise d'insertion par l'économique""";true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9222;Association intermédiaire;true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9223;Groupement d'employeurs;true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9224;Association d'avocats à responsabilité professionnelle individuelle;false
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9230;Association déclarée, reconnue d'utilité publique;true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9240;Congrégation;true
+9;Groupement de droit privé;true;92;Association loi 1901 ou assimilé;true;9260;Association de droit local (Bas-Rhin, Haut-Rhin et Moselle);true
+9;Groupement de droit privé;true;93;Fondation;true;9300;Fondation;true
+9;Groupement de droit privé;true;99;Autre personne morale de droit privé;true;9900;Personne morale de droit privé;true
+9;Groupement de droit privé;true;99;Autre personne morale de droit privé;true;9970;Groupement de coopération sanitaire à gestion privée;false
+0;Organisme de placement collectif;true;00;Organisme de placement collectif;true;0000;Organisme de placement collectif en valeurs mobilières sans personnalité morale;false
