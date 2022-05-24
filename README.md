@@ -88,7 +88,7 @@ Une créance comprend les propriétés suivantes
 * `montantDu` : montant du par le débiteur au créancier à une date donnée
 * `origine` : origine de la créance. La seule origine possible est un [crédit](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/credit.schema.json)
 
-## schéma [titre](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/titre.schema.json)
+## schéma [titre exécutoire](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/titreExecutoire.schema.json)
 Un titre peut être une pièce d'un dossier.
 
 Un titre comprend
