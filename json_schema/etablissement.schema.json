@@ -1,0 +1,53 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/etablissement.schema.json",
+    "title": "Établissement",
+    "description": "Établissement principal ou secondaire d'une personne morale",
+    "type": "object",
+    "properties": {
+        "id" : {
+            "title" : "Référence",
+            "description" : "Référence de l'établissement",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+        },
+        "type" : {
+            "title" : "Type d'établissement",
+            "description" : "Siège social ou établissement secondaire",            
+            "enum" : ["siegeSocial","secondaire"]
+        },
+        "siret" : {
+            "title" : "SIRET",
+            "type": "string",
+            "pattern" : "^[0-9]{14}$"
+        },
+        "adresse" : {
+            "title" : "Adresse",
+            "description" : "Adresse de l'établissement", 
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/adresse.schema.json"
+        },
+        "telephones" : {
+            "type" : "array",
+            "items" : {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/telephone.schema.json"
+            } 
+        },
+        "contacts" : {
+            "type" : "array",
+            "items" : {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json"
+            }              
+        },
+        "dateCreation" : {
+            "title" : "Date de création",
+            "description" : "YYYY-MM-DD",
+            "type" : "string",
+            "format" : "date"
+        },
+        "dateFermeture" : {
+            "title" : "Date de fermeture",
+            "description" : "YYYY-MM-DD",
+            "type" : "string",
+            "format" : "date"
+        }
+    }
+}

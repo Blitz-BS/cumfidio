@@ -71,7 +71,9 @@
                     "marques": [
                         "Blitz"
                     ],
-                    "adresseSiegeSocial": {
+                    "etablissements" : [{
+                        "type" : "siegeSocial",
+                        "adresse": {
                             "numero": "265",
                             "rue": "rue Denis Papin",
                             "codePostal": "38090",
@@ -81,7 +83,8 @@
                                 "latitude": 32.7,
                                 "longitude": 45.5
                             }
-                    },
+                        }
+                    }],
                     "contacts": [
                         {
                             "id": {

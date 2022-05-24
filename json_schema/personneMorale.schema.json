@@ -19,6 +19,11 @@
             "title" : "Raison sociale",
             "type": "string"
         },
+        "siren" : {
+            "title" : "SIREN",
+            "type" : "string",
+            "pattern" : "^[0-9]{9}$"
+        },
         "marques" : {
             "title" : "Marques",
             "description" : "Liste des marques sous lesquelles peuvent apparaître la personne morale",              
@@ -27,10 +32,13 @@
                 "type" : "string"
             }
         },
-        "adresseSiegeSocial" : {
-            "title" : "Adresse du siège social",
-            "description" : "Adresse du siège social", 
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/adresse.schema.json"
+        "etablissements" : {
+            "title" : "Établissements",
+            "description" : "Liste des établissements",
+            "type" : "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/etablissement.schema.json"
+            }
         },
         "telephones" : {
             "type" : "array",
@@ -51,17 +59,17 @@
                 "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json"
             }              
         },
-        "formeLegalNiv1" : {
+        "formeLegaleNiv1" : {
             "title" : "Forme Légale Niveau 1",
             "description" : "voir Description/juridical-forms.csv", 
             "type" : "string"
         },
-        "formeLegalNiv2" : {
+        "formeLegaleNiv2" : {
             "title" : "Forme Légale Niveau 2",
             "description" : "voir Description/juridical-forms.csv", 
             "type" : "string"
         },
-        "formeLegalNiv3" : {
+        "formeLegaleNiv3" : {
             "title" : "Forme Légale Niveau 3",
             "description" : "voir Description/juridical-forms.csv", 
             "type" : "string"
@@ -80,6 +88,43 @@
                     { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
                     { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
                 ]
+            }
+        },
+        "dateCreation" : {
+            "title" : "Date de création",
+            "description" : "YYYY-MM-DD",
+            "type" : "string",
+            "format" : "date"
+        },
+        "dateRadiation" : {
+            "title" : "Date de radiation",
+            "description" : "YYYY-MM-DD",
+            "type" : "string",
+            "format" : "date"
+        },
+        "proceduresCollectives" : {
+            "title" : "Procédures collectives",
+            "description" : "Liste des procédures collectives",
+            "type": "array",
+            "items" : {
+                "type" : "object",
+                "required" : ["type","dateDemarrage","statut"],
+                "properties" : {
+                    "type" : {
+                        "enum" : ["Sauvegarde","Redressement judiciaire","Liquidation judiciaire"]
+                    },
+                    "dateDemarrage" : {
+                        "type" : "string",
+                        "format" : "date"                        
+                    },
+                    "dateFin" : {
+                        "type" : "string",
+                        "format" : "date"                        
+                    },
+                    "status" : {
+                        "enum" : ["ouverte","ferme"]                       
+                    }
+                }
             }
         }
     }
