@@ -5,6 +5,9 @@
     "description": "Un dossier dispose d'un statut. Il dispose de plusieurs pièces",
     "additionalProperties": false,
     "properties" : {
+        "id" : {
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+        },
         "statut" : {
             "enum" : ["ouvert","cloture"]
         },

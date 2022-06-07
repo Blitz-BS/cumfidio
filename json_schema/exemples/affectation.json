@@ -13,6 +13,10 @@
         "type" : "affectation",
         "dossier": {
             "statut": "ouvert",
+            "id" : {
+                "reference": "D",
+                "referentiel": "emetteur"                
+            },
             "creance" : {
                 "id": {
                     "reference": "C",
