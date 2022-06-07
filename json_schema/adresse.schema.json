@@ -32,6 +32,11 @@
           "description" : "Exemple : Jonquille",
           "type" : "string"
         },
+        "lieu" : {
+          "title" : "Lieu",
+          "description" : "Exemple : Le Pont Dom Guérin",
+          "type" : "string"
+        },        
         "codePostal" : {
           "title" : "Code postal",
           "description" : "Exemple : 69002",
