@@ -18,7 +18,7 @@
         {
             "properties" : {
                 "classe" : {
-                    "classe" : "classe de l'évènement",
+                    "title" : "classe de l'évènement",
                     "description" : "Affectation d'un dossier",
                     "enum" : ["affectation"]
                 },
