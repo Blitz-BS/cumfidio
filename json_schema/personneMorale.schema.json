@@ -75,22 +75,6 @@
             "description" : "voir Description/juridical-forms.csv", 
             "type" : "string"
         },
-        "representantLegal" : {
-            "title" : "Représentant légal",
-            "description" : "Le représentant légal est une personne physique ou morale",             
-            "required": ["type","titre"],
-            "properties" : {
-                "titre" : {
-                    "title" : "Titre",
-                    "description" : "Titre du représentant légal",
-                    "type" : "string"
-                },
-                "oneOf" : [
-                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
-                ]
-            }
-        },
         "dateCreation" : {
             "title" : "Date de création",
             "description" : "YYYY-MM-DD",
