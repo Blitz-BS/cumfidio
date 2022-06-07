@@ -11,8 +11,8 @@
             "description" : "Référence de l'établissement",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
-        "type" : {
-            "title" : "Type d'établissement",
+        "classe" : {
+            "title" : "classe d'établissement",
             "description" : "Siège social ou établissement secondaire",            
             "enum" : ["siegeSocial","secondaire"]
         },

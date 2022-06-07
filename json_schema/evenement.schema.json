@@ -2,8 +2,8 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/message.schema.json",
     "title": "Évènement",
-    "description": "Un évènement peut être de différents types qui détermine la structure de l'objet",
-    "required": [ "type", "timestamp" ],
+    "description": "Un évènement peut être de différente classe qui détermine la structure de l'objet",
+    "required": [ "classe", "timestamp" ],
     "additionalProperties": false,
     "type": "object",
     "properties" : {
@@ -17,8 +17,8 @@
     "oneOf" : [
         {
             "properties" : {
-                "type" : {
-                    "title" : "Type de l'évènement",
+                "classe" : {
+                    "classe" : "classe de l'évènement",
                     "description" : "Affectation d'un dossier",
                     "enum" : ["affectation"]
                 },
@@ -29,8 +29,8 @@
         },
         {
             "properties" : {
-                "type" : {
-                    "title" : "Type de l'évènement",
+                "classe" : {
+                    "title" : "classe de l'évènement",
                     "description" : "Désaffectation d'un dossier",
                     "enum" : ["desaffectation"]
                 },
@@ -41,8 +41,8 @@
         },
         {
             "properties" : {
-                "type" : { 
-                    "title" : "Type de l'évènement",
+                "classe" : { 
+                    "title" : "classe de l'évènement",
                     "description" : "Paiement sur un dossier",                    
                     "enum" : ["paiement"]
                 },
@@ -61,7 +61,7 @@
         },
         {
             "properties" : {
-                "type" : { 
+                "classe" : { 
                     "title" : "Modification d'un statut",
                     "description" : "La modification d'un statut précise l'objet dont le statut est modifié et la transition",
                     "enum" : ["modificationStatut"]
@@ -83,7 +83,7 @@
         },
         {
             "properties" : {
-                "type" : { 
+                "classe" : { 
                     "title" : "Modification d'une créance",
                     "description" : "La modification de la créance",
                     "enum" : ["modificationCreance"]
@@ -98,7 +98,7 @@
         },
         {
             "properties" : {
-                "type" : { 
+                "classe" : { 
                     "title" : "Modification d'une personne physique",
                     "description" : "La modification d'une personne physique",
                     "enum" : ["modificationPersonnePhysique"]

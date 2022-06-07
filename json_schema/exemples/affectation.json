@@ -10,7 +10,7 @@
     "timestamp": "2018-11-13T20:20:39+00:00",
     "evenement" : {
         "timestamp": "2018-11-13T20:20:39+00:00",
-        "type" : "affectation",
+        "classe" : "affectation",
         "dossier": {
             "statut": "ouvert",
             "id" : {
@@ -24,7 +24,7 @@
                 },
                 "statut" : "due",
                 "debiteurs": [{
-                    "type" : "personnePhysique",
+                    "classe" : "personnePhysique",
                     "id": {
                         "reference": "D",
                         "referentiel": "emetteur"
@@ -51,11 +51,11 @@
                     ],
                     "telephones": [
                         {
-                            "type": "fixe",
+                            "classe": "fixe",
                             "numero": "+33465987456"
                         },
                         {
-                            "type": "mobile",
+                            "classe": "mobile",
                             "numero": "+33689751263"
                         }
                     ],
@@ -66,7 +66,7 @@
                     "profession" : "commerçant"
                 }],
                 "creanciers": [{
-                    "type" : "personneMorale",
+                    "classe" : "personneMorale",
                     "id": {
                         "reference": "A",
                         "referentiel": "emetteur"
@@ -76,7 +76,7 @@
                         "Blitz"
                     ],
                     "etablissements" : [{
-                        "type" : "siegeSocial",
+                        "classe" : "siegeSocial",
                         "adresse": {
                             "numero": "265",
                             "rue": "rue Denis Papin",
@@ -120,12 +120,12 @@
                             "referentiel": "emetteur"
                         },
                         "emprunteurs": [{
-                            "type" : "personnePhysique",
+                            "classe" : "personnePhysique",
                             "prenoms": ["Sébastien"],
                             "nom": "Dujardin"
                         }],
                         "preteur": {
-                            "type" : "personneMorale",
+                            "classe" : "personneMorale",
                             "raisonSociale": "BNP"
                         },
                         "montantEmprunte": {

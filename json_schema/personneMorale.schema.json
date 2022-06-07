@@ -11,8 +11,8 @@
             "description" : "Référence de la personne morale",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
-        "type" : {
-            "title" : "Type de la personne",
+        "classe" : {
+            "title" : "classe de la personne",
             "description" : "Ici une personne morale",            
             "enum" : ["personneMorale"]
         },
@@ -93,9 +93,9 @@
             "type": "array",
             "items" : {
                 "type" : "object",
-                "required" : ["type","dateDemarrage","statut"],
+                "required" : ["classe","dateDemarrage","statut"],
                 "properties" : {
-                    "type" : {
+                    "classe" : {
                         "enum" : ["Sauvegarde","Redressement judiciaire","Liquidation judiciaire"]
                     },
                     "dateDemarrage" : {

@@ -11,8 +11,8 @@
             "description" : "Référence de la personne physique",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
         },
-        "type" : {
-            "title" : "Type de la personne",
+        "classe" : {
+            "title" : "classe de la personne",
             "description" : "Ici une personne physique",  
             "enum" : ["personnePhysique"]
         },

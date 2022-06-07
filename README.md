@@ -22,9 +22,9 @@ Un référence est l'identifiant d'un objet utilisé dans l'application. Une ré
 ## schéma [évènement](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/evenement.schema.json)
 Un évènement comprend à minima deux propriétés
 1. `timestamp` : l'horodatage de l'évènement. L'évènement peut être horodaté au même moment que le message si le message est une instruction ou avoir une date antérieure à celle du message s'il s'agit d'une information. 
-2. `type` : le type d'évènement. Un évènement peut embarquer plusieurs objets différents selon son type.
+2. `classe` : la classe d'évènement. Un évènement peut embarquer plusieurs objets différents selon sa classe.
 
-Pour l'instant 4 types de message sont disponibles
+Pour l'instant 4 classes de message sont disponibles
 * affectation
 * désaffectation
 * paiement
@@ -32,39 +32,39 @@ Pour l'instant 4 types de message sont disponibles
 * modification d'une créance
 * modification d'une personne physique
 
-### évènement de type affectation
-Un évènement de type affectation permet d'affecter un [dossier](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/evenement.schema.json) à un prestataire. 
+### évènement de classe affectation
+Un évènement de classe affectation permet d'affecter un [dossier](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/evenement.schema.json) à un prestataire. 
 
-_exemple de [message de type affectation](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/affectation.json)_
+_exemple de [message de classe affectation](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/affectation.json)_
 
-### évènement de type désaffectation 
-Un évènement de type désaffectation permet de désaffecter un dossier d'un prestataire. 
+### évènement de classe désaffectation 
+Un évènement de classe désaffectation permet de désaffecter un dossier d'un prestataire. 
 
-_exemple de [message de type désaffectation](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/desaffectation.json)_
+_exemple de [message de classe désaffectation](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/desaffectation.json)_
 
-### évènement de type paiement
-Un évènement de type paiement permet d'enregistrer un paiement sur un dossier.
+### évènement de classe paiement
+Un évènement de classe paiement permet d'enregistrer un paiement sur un dossier.
 
-Un évènement de type paiement comprend 3 propriétés
+Un évènement de clasee paiement comprend 3 propriétés
 * le [paiement](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/paiement.schema.json) lui même
 * la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) du dossier
 * la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) de l'organisation à l'origine du paiement. Ce peut être par exemple le prestataire ou le donneur d'ordre.
 
-_exemple de [message de type paiement](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/paiement.json)_
+_exemple de [message de classe paiement](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/exemples/paiement.json)_
 
-### évènement de type modification de statut
+### évènement de classe modification de statut
 Cet évènement permet de modifier le statut d'un dossier ou d'une de ses pièces.
 
 Une modification comprend trois propriétés
 * la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) du dossier
-* le type d'objet dont le statut est modifié.
+* la classe d'objet dont le statut est modifié.
 * la transition qui modifie le statut.
 
 Pour l'instant la seule transition disponible est `passageEnIrrecouvrable` appliquée à l'objet `creance`. 
 
 > le formalisme suivi est celui des [automates finis](https://fr.wikipedia.org/wiki/Automate_fini). L'objet peut être dans un nombre fini de statuts (états). L'application d'une transition modifie le statut de l'objet. On pourra décrire des systèmes complexes de statuts (états) grâce à des [diagrammes états-transitions](https://fr.wikipedia.org/wiki/Diagramme_%C3%A9tats-transitions)
 
-### évènement de type modification d'une créance
+### évènement de classe modification d'une créance
 Cet évènement permet de modifier un créance.
 
 Une modification comprend les propriétés
@@ -73,7 +73,7 @@ Une modification comprend les propriétés
 
 Le nouvel objet écrase l'ancien objet. 
 
-### évènement de type modification d'une personne physique
+### évènement de classe modification d'une personne physique
 Cet évènement permet de modifier une personne physique.
 
 Une modification comprend les propriétés

@@ -10,13 +10,13 @@
     "timestamp": "2018-11-13T20:20:39+00:00",
     "evenement" : {
         "timestamp": "2018-11-13T20:20:39+00:00",
-        "type" : "modificationPersonnePhysique",
+        "classe" : "modificationPersonnePhysique",
         "idPersonne" : {
             "reference": "D",
             "referentiel": "emetteur"
         },
         "personnePhysique": {
-            "type" : "personnePhysique",
+            "classe" : "personnePhysique",
             "id": {
                 "reference": "D",
                 "referentiel": "emetteur"
@@ -43,11 +43,11 @@
             ],
             "telephones": [
                 {
-                    "type": "fixe",
+                    "classe": "fixe",
                     "numero": "+33465987456"
                 },
                 {
-                    "type": "mobile",
+                    "classe": "mobile",
                     "numero": "+33689751263"
                 }
             ],

@@ -50,8 +50,8 @@
     "oneOf": [
         {
             "properties" : {
-                "type" : { 
-                    "title" : "Type de crédit",
+                "classe" : { 
+                    "title" : "classe de crédit",
                     "description" : "Crédit à la consommation affecté",
                     "enum" : ["consommationAffecte"]
                 },

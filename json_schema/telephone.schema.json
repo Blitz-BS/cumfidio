@@ -14,8 +14,8 @@
           "pattern" : "^\\+[0-9]{9,17}$"
           
         },
-        "type": {
-          "title" : "Type de numéro",
+        "classe": {
+          "title" : "classe de numéro",
           "description": "Fixe ou mobile",
           "enum" : ["fixe", "mobile"]
         }

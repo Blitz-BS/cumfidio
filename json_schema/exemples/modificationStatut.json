@@ -10,7 +10,7 @@
     "timestamp": "2018-11-13T20:20:39+00:00",
     "evenement": {
         "timestamp" : "2018-11-13T20:20:39+00:00",
-        "type" : "modificationStatut",
+        "classe" : "modificationStatut",
         "idDossier" : {
             "reference": "C",
             "referentiel": "emetteur"

@@ -5,7 +5,7 @@
     },
     "statut" : "due",
     "debiteur": {
-        "type" : "personnePhysique",
+        "classe" : "personnePhysique",
         "id": {
             "reference": "D",
             "referentiel": "emetteur"
@@ -31,11 +31,11 @@
         ],
         "telephones": [
             {
-                "type": "fixe",
+                "classe": "fixe",
                 "numero": "+33465987456"
             },
             {
-                "type": "mobile",
+                "classe": "mobile",
                 "numero": "+33689751263"
             }
         ],
@@ -45,7 +45,7 @@
         ]
     },
     "creancier": {
-        "type" : "personneMorale",
+        "classe" : "personneMorale",
         "id": {
             "reference": "A",
             "referentiel": "emetteur"
@@ -90,18 +90,18 @@
     },
     "origine": {
         "credit": {
-            "type" : "consommationAffecte",
+            "classe" : "consommationAffecte",
             "id": {
                 "reference": "F",
                 "referentiel": "emetteur"
             },
             "emprunteur": {
-                "type" : "personnePhysique",
+                "classe" : "personnePhysique",
                 "prenom": "Sébastien",
                 "nom": "Dujardin"
             },
             "preteur": {
-                "type" : "personneMorale",
+                "classe" : "personneMorale",
                 "raisonSociale": "BNP"
             },
             "montantEmprunte": {

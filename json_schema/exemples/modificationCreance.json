@@ -10,7 +10,7 @@
     "timestamp": "2018-11-13T20:20:39+00:00",
     "evenement" : {
         "timestamp": "2018-11-13T20:20:39+00:00",
-        "type" : "modificationCreance",
+        "classe" : "modificationCreance",
         "idCreance" : {
             "reference": "C",
             "referentiel": "emetteur"            
@@ -34,12 +34,12 @@
                         "referentiel": "emetteur"
                     },
                     "emprunteurs": [{
-                        "type" : "personnePhysique",
+                        "classe" : "personnePhysique",
                         "prenoms": ["Sébastien"],
                         "nom": "Dujardin"
                     }],
                     "preteur": {
-                        "type" : "personneMorale",
+                        "classe" : "personneMorale",
                         "raisonSociale": "BNP"
                     },
                     "montantEmprunte": {
