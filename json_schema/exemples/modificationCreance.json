@@ -1,0 +1,65 @@
+{
+    "from": {
+        "reference": "A",
+        "referentiel": "emetteur"
+    },
+    "to": {
+        "reference": "B",
+        "referentiel": "emetteur"
+    },
+    "timestamp": "2018-11-13T20:20:39+00:00",
+    "evenement" : {
+        "timestamp": "2018-11-13T20:20:39+00:00",
+        "type" : "modificationCreance",
+        "idCreance" : {
+            "reference": "C",
+            "referentiel": "emetteur"            
+        },
+        "creance" : {
+            "id": {
+                "reference": "C",
+                "referentiel": "emetteur"
+            },
+            "montantDu": {
+                "montant": {
+                    "valeur": 1250.25,
+                    "monnaie": "EUR"
+                },
+                "timestamp": "2018-11-13T20:20:39+00:00"
+            },
+            "origine": {
+                "credit": {
+                    "id": {
+                        "reference": "F",
+                        "referentiel": "emetteur"
+                    },
+                    "emprunteurs": [{
+                        "type" : "personnePhysique",
+                        "prenoms": ["Sébastien"],
+                        "nom": "Dujardin"
+                    }],
+                    "preteur": {
+                        "type" : "personneMorale",
+                        "raisonSociale": "BNP"
+                    },
+                    "montantEmprunte": {
+                        "valeur": 1250.25,
+                        "monnaie": "EUR"
+                    },
+                    "dateOuverture": "2018-11-13T20:20:39+00:00",
+                    "taux": 0.015,
+                    "enseigne": "Cuisine and co",
+                    "biensFinances": [
+                        {
+                            "nom": "cuisine",
+                            "prix": {
+                                "valeur": 3258.25,
+                                "monnaie": "EUR"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "from": {
+        "reference": "A",
+        "referentiel": "emetteur"
+    },
+    "to": {
+        "reference": "B",
+        "referentiel": "emetteur"
+    },
+    "timestamp": "2018-11-13T20:20:39+00:00",
+    "evenement" : {
+        "timestamp": "2018-11-13T20:20:39+00:00",
+        "type" : "modificationPersonnePhysique",
+        "idPersonne" : {
+            "reference": "D",
+            "referentiel": "emetteur"
+        },
+        "personnePhysique": {
+            "type" : "personnePhysique",
+            "id": {
+                "reference": "D",
+                "referentiel": "emetteur"
+            },
+            "prenoms": ["Jeanne"],
+            "nom": "Dupont",
+            "nomMarital": "Durand",
+            "dateDeNaissance": "1977-06-14",
+            "communeNaissance": "Paris",
+            "paysDeNaissance" : "FR",
+            "civilite": "Mme",
+            "adresses": [
+                {
+                    "numero": "17",
+                    "rue": "rue Louis XIV",
+                    "codePostal": "69003",
+                    "ville": "Lyon",
+                    "codePays": "FR",
+                    "gps": {
+                        "latitude": 30.2,
+                        "longitude": 40.5
+                    }
+                }
+            ],
+            "telephones": [
+                {
+                    "type": "fixe",
+                    "numero": "+33465987456"
+                },
+                {
+                    "type": "mobile",
+                    "numero": "+33689751263"
+                }
+            ],
+            "emails": [
+                "zz@gmail.com",
+                "uu@yahoo.fr"
+            ],
+            "profession" : "commerçant"
+        }
+    }
+}

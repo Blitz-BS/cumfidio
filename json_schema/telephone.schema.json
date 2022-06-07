@@ -5,6 +5,7 @@
     "description": "Téléphone mobile ou fixe.",
     "required": [ "numero" ],
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "numero": {
           "title" : "Numéro de téléphone",

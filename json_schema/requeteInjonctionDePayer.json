@@ -4,6 +4,7 @@
     "title": "Requête en injonction de payer",
     "description": "Requête en injonction de payer",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "id" : {
             "title" : "Identifiant de la demande",
@@ -14,14 +15,16 @@
             "type" : "string",
             "format" : "date"
         },
-        "demandeur" : {
-            "title" : "Demandeur",
-            "description": "Identité du demandeur",
-            "required": ["type"],
-            "oneOf" : [
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
-            ]
+        "demandeurs" : {
+            "title" : "Demandeurs",
+            "description": "Liste des demandeurs",
+            "type" : "array",
+            "items" : {
+                "oneOf": [
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+                ]
+            }
         },
         "creance" : {
             "title" : "Créance",

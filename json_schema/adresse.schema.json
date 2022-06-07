@@ -4,6 +4,7 @@
     "title": "Adresse",
     "description": "Adresse",
     "required": [ "codePostal", "ville", "codePays" ],
+    "additionalProperties": false,
     "type": "object",
     "properties": {
         "numero" : {

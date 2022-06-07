@@ -4,6 +4,7 @@
     "title": "Évènement",
     "description": "Un évènement peut être de différents types qui détermine la structure de l'objet",
     "required": [ "type", "timestamp" ],
+    "additionalProperties": false,
     "type": "object",
     "properties" : {
         "timestamp" : {
@@ -77,6 +78,36 @@
                     "title" : "Transition",
                     "description" : "Transition appliquée",                       
                     "enum" : ["passageEnIrrecouvrable"]
+                }
+            }
+        },
+        {
+            "properties" : {
+                "type" : { 
+                    "title" : "Modification d'une créance",
+                    "description" : "La modification de la créance",
+                    "enum" : ["modificationCreance"]
+                },
+                "idCreance" : { 
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+                },
+                "creance" : {
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/creance.schema.json"
+                }
+            }
+        },
+        {
+            "properties" : {
+                "type" : { 
+                    "title" : "Modification d'une personne",
+                    "description" : "La modification d'une personne physique",
+                    "enum" : ["modificationPersonne"]
+                },
+                "idPersonne" : { 
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
+                },
+                "personnePhysique" : {
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json"
                 }
             }
         }

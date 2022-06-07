@@ -4,6 +4,7 @@
     "title": "Personne morale",
     "description": "Personne morale en droit français",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "id" : {
             "title" : "Référence",

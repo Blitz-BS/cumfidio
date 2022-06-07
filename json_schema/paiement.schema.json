@@ -5,6 +5,7 @@
     "description": "Un paiement comprend un moyen de paiement, un montant et une date",
     "required": [ "moyen", "montant", "timestamp" ],
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "moyen" : {
           "title" : "Moyen de paiement",

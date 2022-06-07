@@ -4,6 +4,7 @@
     "title": "Personne physique",
     "description": "Personne physique",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "id" : {
             "title" : "Référence",

@@ -4,6 +4,7 @@
     "title": "Créance",
     "description": "Une créance est un montant dû par un débiteur à un créancier",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "id" : {
             "title" : "Identifiant",
@@ -15,32 +16,59 @@
             "description" : "Statut de la créance",            
             "enum" : [ "due", "impayeDefinitif"]
         },
-        "debiteur" : {
-            "title" : "Débiteur",
-            "description" : "Le débiteur est une personne physique ou morale", 
-            "required": ["type"],
-            "oneOf": [
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
-            ]
+        "debiteurs" : {
+            "title" : "Débiteurs",
+            "description" : "Liste des débiteurs pouvant être des personnes physiques ou morales", 
+            "type" : "array",
+            "items" : {
+                "oneOf": [
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+                ]
+            }
         },
-        "debiteurSecondaire" : {
-            "title" : "Débiteur secondaire",
-            "description" : "Le débiteur secondaire est le garant ou caution du débiteur principal", 
-            "required": ["type"],
-            "oneOf": [
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
-            ]
+        "cautions" : {
+            "title" : "Cautions",
+            "description" : "Liste des cautions à la créance",
+            "type" : "array", 
+            "items" : {
+                "type" : "object",
+                "title" : "Caution",
+                "description" : "Caution à la créance",
+                "properties" : {
+                    "rang" : {
+                        "title" : "Rang",
+                        "description": "Rang de la caution",
+                        "type": "number"
+                    },
+                    "taux" : {
+                        "title" : "Taux de garantie",
+                        "description" : "Taux de la caution garantie par la caution",
+                        "type" : "number",
+                        "minimum": 0,
+                        "maximum": 1
+                    },
+                    "caution" : {
+                        "title" : "Personne caution",
+                        "description" : "Personne caution",
+                        "oneOf": [
+                            { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                            { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+                        ]                      
+                    }
+                }
+            }
         },        
-        "creancier" : {
-            "title" : "Créancier",
-            "description" : "Le créancier est une personne physique ou morale",             
-            "required": ["type"],
-            "oneOf" : [
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
-                { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
-            ]
+        "creanciers" : {
+            "title" : "Créanciers",
+            "description" : "Liste des créanciers pouvant être des personnes physiques ou morales",             
+            "type" : "array",
+            "items" : {
+                "oneOf": [
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personnePhysique.schema.json" },
+                    { "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/personneMorale.schema.json" }
+                ]
+            }
         },
         "montantDu" : {
             "title" : "Montant dû",

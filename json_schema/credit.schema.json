@@ -4,6 +4,7 @@
     "title": "Crédit",
     "description": "Seul les crédits à la consommation affecté sont implémentés",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "id" : {
             "title" : "Identifiant",

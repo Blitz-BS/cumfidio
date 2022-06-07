@@ -3,6 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/dossier.schema.json",
     "title": "Dossier",
     "description": "Un dossier dispose d'un statut. Il dispose de plusieurs pièces",
+    "additionalProperties": false,
     "properties" : {
         "statut" : {
             "enum" : ["ouvert","cloture"]

@@ -4,6 +4,7 @@
     "title": "Établissement",
     "description": "Établissement principal ou secondaire d'une personne morale",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "id" : {
             "title" : "Référence",

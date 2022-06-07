@@ -19,7 +19,7 @@
                     "referentiel": "emetteur"
                 },
                 "statut" : "due",
-                "debiteur": {
+                "debiteurs": [{
                     "type" : "personnePhysique",
                     "id": {
                         "reference": "D",
@@ -60,8 +60,8 @@
                         "uu@yahoo.fr"
                     ],
                     "profession" : "commerçant"
-                },
-                "creancier": {
+                }],
+                "creanciers": [{
                     "type" : "personneMorale",
                     "id": {
                         "reference": "A",
@@ -101,7 +101,7 @@
                     "formeLegaleNiv1" : "5",
                     "formeLegaleNiv2" : "54",
                     "formeLegaleNiv3" : "5410"                  
-                },
+                }],
                 "montantDu": {
                     "montant": {
                         "valeur": 1250.25,

@@ -4,6 +4,7 @@
     "title": "Message",
     "description": "Un message comprend un émetteur (from), un destinataire (to), une heure (timestamp), un évènement",
     "required": [ "from", "to", "timestamp", "evenement"],
+    "additionalProperties": false,
     "type": "object",
     "properties": {
         "from": {

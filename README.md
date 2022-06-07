@@ -29,6 +29,8 @@ Pour l'instant 4 types de message sont disponibles
 * désaffectation
 * paiement
 * modification de statut
+* modification d'une créance
+* modification d'une personne physique
 
 ### évènement de type affectation
 Un évènement de type affectation permet d'affecter un [dossier](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/evenement.schema.json) à un prestataire. 
@@ -62,6 +64,24 @@ Pour l'instant la seule transition disponible est `passageEnIrrecouvrable` appli
 
 > le formalisme suivi est celui des [automates finis](https://fr.wikipedia.org/wiki/Automate_fini). L'objet peut être dans un nombre fini de statuts (états). L'application d'une transition modifie le statut de l'objet. On pourra décrire des systèmes complexes de statuts (états) grâce à des [diagrammes états-transitions](https://fr.wikipedia.org/wiki/Diagramme_%C3%A9tats-transitions)
 
+### évènement de type modification d'une créance
+Cet évènement permet de modifier un créance.
+
+Une modification comprend les propriétés
+* la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) de la créance à modifier.
+* le nouvel objet [créance](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/creance.schema.json).
+
+Le nouvel objet écrase l'ancien objet. 
+
+### évènement de type modification d'une personne physique
+Cet évènement permet de modifier une personne physique.
+
+Une modification comprend les propriétés
+* la [référence](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/reference.schema.json) de la personne physique à modifier
+* le nouvel objet [personne physique](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/personnePhysique.schema.json).
+
+Le nouvel objet écrase l'ancien objet. 
+
 ## schéma [dossier](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/dossier.schema.json)
 Un dossier a possiblement un statut et des pièces. Les pièces possibles sont
 * une [requête en injonction de payer](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/requeteInjonctionDePayer.schema.json)
@@ -83,8 +103,9 @@ Une créance peut être une pièce d'un dossier.
 Une créance comprend les propriétés suivantes
 * `id` : identifiant de la créance
 * `statut` : statut de la créance (due, impayé définitif...)
-* `debiteur`: personne physique ou morale
-* `creancier` : personne physique ou morale
+* `debiteurs`: liste de personnes physiques ou morales
+* `creanciers` : liste de personnes physiques ou morales
+* `cautions` : liste des cautions
 * `montantDu` : montant du par le débiteur au créancier à une date donnée
 * `origine` : origine de la créance. La seule origine possible est un [crédit](https://github.com/Blitz-BS/cumfidio/blob/main/json_schema/credit.schema.json)
 

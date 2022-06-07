@@ -4,6 +4,7 @@
     "title": "Titre",
     "description": "Titre exécutoire",
     "type": "object",
+    "additionalProperties": false,
     "properties": {
         "id" : {
             "title" : "Identifiant du titre",
