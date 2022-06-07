@@ -19,7 +19,7 @@
             "properties" : {
                 "type" : {
                     "title" : "Type de l'évènement",
-                    "Description" : "Affectation d'un dossier",
+                    "description" : "Affectation d'un dossier",
                     "enum" : ["affectation"]
                 },
                 "dossier" : {
@@ -31,7 +31,7 @@
             "properties" : {
                 "type" : {
                     "title" : "Type de l'évènement",
-                    "Description" : "Désaffectation d'un dossier",
+                    "description" : "Désaffectation d'un dossier",
                     "enum" : ["desaffectation"]
                 },
                 "idDossier" : { 
@@ -43,7 +43,7 @@
             "properties" : {
                 "type" : { 
                     "title" : "Type de l'évènement",
-                    "Description" : "Paiement sur un dossier",                    
+                    "description" : "Paiement sur un dossier",                    
                     "enum" : ["paiement"]
                 },
                 "idDossier" : { 
