@@ -66,9 +66,7 @@
                     "type" : "array",
                     "items" : {
                         "type" : "object",
-                        "properties" : {
-                            "title" : "Nom",
-                            "description" : "Description du bien financé",                   
+                        "properties" : {               
                             "nom" : {
                                 "type" : "string"
                             },
