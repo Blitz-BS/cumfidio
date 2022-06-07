@@ -99,9 +99,9 @@
         {
             "properties" : {
                 "type" : { 
-                    "title" : "Modification d'une personne",
+                    "title" : "Modification d'une personne physique",
                     "description" : "La modification d'une personne physique",
-                    "enum" : ["modificationPersonne"]
+                    "enum" : ["modificationPersonnePhysique"]
                 },
                 "idPersonne" : { 
                     "$ref": "https://raw.githubusercontent.com/Blitz-BS/cumfidio/main/json_schema/reference.schema.json"
